@@ -1,0 +1,23 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Project-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+.Project-list li {
+    display: flex;
+}
+
+.header {
+    margin-bottom: 5px;
+}
+
