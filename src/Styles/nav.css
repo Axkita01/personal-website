@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     height: 60px;
+    position: sticky;
+    top: 0px;
     background: rgb(86, 199, 255);
     white-space: nowrap;
     border-bottom-color: black;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+    box-shadow: none;
+    transition: all .3s ease 0s;
 }
 
+/*fix delayed sliding on resize*/
 .link {
     height: 10px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin-right: 30px;
+    margin-right: 3vw;
     transition: all .3s ease 0s
 }
 
@@ -23,7 +31,6 @@
 .link:hover {
     height: 10px;
     font-family: 'Kdam Thmor Pro', sans-serif;
-    margin-right: 30px;
     text-decoration: none;
     color: rgb(73, 72, 72);
     transition: all .3s ease 0s;
@@ -36,7 +43,6 @@
     margin-left: 0px;
     left: 80px;
     top: 1px;
-
 }
 
 
@@ -44,251 +50,87 @@
     display: inline-block;
 }
 
-#second-part ul {
-    margin-top: 0px;
+
+.logo {
+    width: 50px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+
 }
 
-#second-part li {
-    line-height: 2;
-}
-
-
-.logo{
-    width: 42px;
-    height: 42px;
-    display: inline-block;
-    position: absolute;
-    left: 15px;
-    top: 8px;
-    border-radius: 20px;
-    transition: .3s ease 0s;
-}
-
-.logo:hover {
-    width: 46px;
-    height: 46px;
-    display: inline-block;
-    position: absolute;
-    left: 13px;
-    top: 6px;
-    border-radius: 23px;
-    transition: .3s ease 0s;
-}
-
-#linked {
-    left: 398px;
+.icon {
+    position: relative;
+    top: 4px;
     width: 20px;
     height: 20px;
     border-radius: 5px;
-    top: 19px;
-    transition: all .3s ease 0s
+    transition: all .3s ease 0s;
+    margin-right: 3vw;
 }
 
-.b {
+
+
+.hidden {
     display: none;
-    justify-content: center;
+}
+
+.mobile-menu {
+    height: 50px;
+    width: 50px;
+    display: none;
     position: absolute;
     right: 0px;
-    width: 60px;
-    margin: 0px;
-    padding: none;
-    display: none;
-    top: .8%;
-    border:none;
-    background-color:transparent;
-    outline:none;
-    animation: .5s ease FadeIn 0s;
+    margin-right: 2vw;
 }
 
-#burger-start:checked {
-    animation: .5s ease FadeOut 0s;
-}
-
-#x {
-
-    display: none;
-    font-size: xx-large;
-    color: white;
-    right: 9px;
-    top: 2%;
-    transition: all .5s ease 0s;
-    cursor: pointer;
-    width: 8%;
-    height: 8.1%;
-    justify-items: center;
-    align-items: center;
-}
-
-#x:checked {
-    animation: .5s ease FadeOut 0s;
-}
-
-
-
-.b ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0px
-}
-
-.bc {
-    display: none;
-    position: absolute;
-    justify-content: center;
-    justify-self: center;
-    left: 0;
-    top: 60px;
-    height: 50%;
+.burger-toggle {
+    height: 100%;
     width: 100%;
-}
-
-.bc ul {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    position: absolute;
-    top: 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    list-style:square;
-    padding-left: 0px;
-    width: 100%;
-    animation: .2s ease FadeIn;
-}
-
-.bc li {
-    margin-right: 0px;
-    display: flex;
-    text-justify: center;
     justify-content: center;
-    position: relative;
     background: white;
-    position: relative;
-    width: 100%;
-    flex-shrink: 0;
-    height: 50px;
-    border-style: solid;
-    border-color: black;
-    background: rgb(255, 255, 255);
     
 }
 
-.bc li a {
-    position: relative;
-    top: 20%;
-}
-
-#bl {
-    color: black;
-    margin-right: 0px;
-}
-
-#bl:hover {
-    color: rgb(58, 58, 58);
-    margin-right: 0px;
-}
-
-
-#last-bl {
-    border-bottom-width: 2px;
-    animation: .3s ease wait-time, .8s ease FadeIn .3s;
-}
-
-#first-bl {
-    border-top-width: 2px;
-    animation: .8s ease FadeIn; 
-}
-
-#bl2 {
-    animation: .1s ease wait-time, .8s ease FadeIn .1s; 
-}
-
-#bl3 {
-    animation: .2s ease wait-time, .8s ease FadeIn .2s; 
+/*make this look nice*/
+.lines {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 100%;
 }
 
 .line {
-    height: 5px;
-    position: relative;
-    background: rgb(255, 255, 255);
-    width: 30px;
-    margin-bottom: 3px;
-    border-radius: 5px;
+    margin-top: 25%;
+    height: 5%;
+    background: black;
 }
 
-
-#linked:hover {
-    left: 397px;
+#icon:hover {
     width: 22px;
     height: 22px;
     border-radius: 6px;
-    top: 18.5px;
     transition: all .3s ease 0s;
 }
 
 #git {
-    left: 443px;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    top: 19px;
     transition: all .3s ease 0s;
     background: #FFF;
 }
 
-#git:hover {
-    left: 442px;
-    width: 22px;
-    height: 22px;
-    border-radius: 6px;
-    top: 18.5px;
+#scrolled {
+    box-shadow: 0 5px 5px black;
     transition: all .3s ease 0s;
-    background: #FFF;
 }
 
-@media only screen and (max-width: 600px) {
-    .b {
-        display: flex;
-    }
-   
-    .bc {
-        display: flex;
-    }
+@media screen and (max-width: 600px) {
     .navLinks {
         display: none;
     }
 
-    #git {
-        display: none;
-    }
-
-    #linked {
-        display: none;
-    }
-
-    #x {
-        display: flex;
+    .mobile-menu {
+        display: flex
     }
 }
-
-
-@keyframes FadeIn {
-    0% { opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes FadeOut {
-    0% { opacity: 1;}
-    100% {opacity: 0;}
-}
-
-@keyframes wait-time {
-    0% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
-
 
