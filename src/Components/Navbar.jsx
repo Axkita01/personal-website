@@ -7,8 +7,7 @@ import {useState, useEffect} from 'react';
 
 function Navbar () {
     const [navClass, setClass] = useState('')
-    console.log(window.innerWidth)
-
+    const [burger, setBurger] = useState(false)
     function mount () {
         window.onscroll = () => {
             if (window.scrollY !== 0) {
@@ -20,6 +19,7 @@ function Navbar () {
             }
         }
     }
+    console.log(burger)
     /*implement on unmount*/
     function unmount () {
         window.onscroll = null;
@@ -67,19 +67,33 @@ function Navbar () {
                             id = 'git' 
                             src = {git} 
                             alt = 'logo'
-                        ></img>
-            </a>
+                            ></img>
+                        </a>
                     </li>
                 </ul>
             </nav>
             <div className = 'mobile-menu'>
-                <button className = 'burger-toggle'>
+                <button 
+                className = {!burger ? 'burger-toggle': 'hidden'}
+                onClick = {() => setBurger(!burger)}>
                     <ul className='lines'>
-                    <div className = 'line'/>
-                    <div className = 'line'/>
-                    <div className = 'line'/>  
+                        <div className = 'line'/>
+                        <div className = 'line'/>
+                        <div className = 'line'/>  
                     </ul>  
                 </button>
+                <button 
+                className = {burger ? 'burger-toggle': 'hidden'}
+                onClick = {() => setBurger(!burger)}>
+                </button>
+            </div>
+            <div className={burger ? 'uncollapse': 'hidden'}>
+                <ul>
+                    <li>Hello</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
 

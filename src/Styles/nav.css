@@ -124,6 +124,12 @@
     transition: all .3s ease 0s;
 }
 
+.uncollapse {
+    display: hide;
+    position: relative;
+    top: 60px;
+}
+
 @media screen and (max-width: 600px) {
     .navLinks {
         display: none;
@@ -131,6 +137,10 @@
 
     .mobile-menu {
         display: flex
+    }
+
+    .uncollapse {
+        display: flex;
     }
 }
 
