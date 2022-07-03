@@ -1,5 +1,8 @@
+html, body {
+    overflow-x: hidden;
+}
 
-
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 
 

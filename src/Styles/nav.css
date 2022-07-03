@@ -41,7 +41,6 @@
     position: absolute;
     padding-left: 0px;
     margin-left: 0px;
-    left: 80px;
     top: 1px;
 }
 
@@ -52,10 +51,24 @@
 
 
 .logo {
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: 2px;
     margin-left: 3vw;
-    margin-right: 3vw;
+    margin-right: 2vw;
 
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
 }
 
 .icon {
@@ -75,8 +88,8 @@
 }
 
 .mobile-menu {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: none;
     position: absolute;
     right: 0px;
@@ -90,6 +103,7 @@
     align-items: center;
     justify-content: center;
     background: white;
+    border-radius: 25%;
     
 }
 
@@ -102,7 +116,9 @@
 }
 
 .line {
-    margin-top: 25%;
+    position: relative;
+    top: 5%;
+    margin-top: 30%;
     height: 5%;
     background: black;
 }
@@ -125,11 +141,40 @@
 }
 
 .uncollapse {
-    display: hide;
-    position: relative;
-    top: 60px;
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: -.35vw;
+    list-style: none;
+
 }
 
+.drop-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.drop-links li {
+    height: 30px;
+    background: white;
+    border-style: solid;
+    border-top: none;
+    border-width: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+.drop-links li a {
+    position: relative;
+    top: 3px;
+    color: rgb(73, 72, 72);
+}
+
+.drop-links li a:hover {
+    color: rgb(168, 165, 165);
+}
 @media screen and (max-width: 600px) {
     .navLinks {
         display: none;
@@ -141,6 +186,8 @@
 
     .uncollapse {
         display: flex;
+        justify-content: center;
+        width: 100vw;
     }
 }
 

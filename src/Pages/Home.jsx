@@ -1,7 +1,27 @@
 import Navbar from '../Components/Navbar';
 import '../Styles/Home.css'
+import ImageGallery from 'react-image-gallery'
+import git from '../Components/git.png'
+import linked from '../Components/linkedin.png'
+import header from '../Components/header.jpg'
 
 function Home() {
+
+    const images = [
+        {
+            original: linked,
+            originalClass: 'home-pic'
+        },
+        {
+            original: git,
+            originalClass: 'home-pic'
+        },
+        {
+        original: header,
+        originalClass: 'home-pic'
+        }
+      ];
+
     return (
         <div className = 'page'>
             <Navbar sticky = 'top'/>
@@ -17,11 +37,15 @@ function Home() {
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
             </div>
+
             <div className = 'pic-contain'>
-                <img className = 'home-pic'/>
-                <img className = 'home-pic'/>
-                <img className = 'home-pic'/>
+                <ImageGallery 
+                className = 'gallery' 
+                items = {images} 
+                autoPlay = 'true'
+                />
             </div>
+
             <div className = 'partition' id = 'second-part'>
                 <h1>
                     Relevant Coursework and Experience

@@ -1,6 +1,6 @@
-import React, { useReducer } from 'react';
+
 import '../Styles/nav.css';
-import pic from './logo.jpg';
+import pic from './header.jpg';
 import linked from './linkedin.png';
 import git from './git.png';
 import {useState, useEffect} from 'react';
@@ -30,9 +30,8 @@ function Navbar () {
     }, [])
     return (
         <div className = 'navbar' id = {navClass}>
-            <a href = '/'>
-                <img 
-                className = 'logo' 
+            <a href = '/' className = 'logo'>
+                <img  
                 src = {pic} 
                 alt = 'logo' 
                 ></img>
@@ -88,11 +87,11 @@ function Navbar () {
                 </button>
             </div>
             <div className={burger ? 'uncollapse': 'hidden'}>
-                <ul>
-                    <li>Hello</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul className='drop-links'>
+                    <li><a  className = 'link' href = '#'>Home</a></li>
+                    <li><a  className = 'link' href = '#'>Resume</a></li>
+                    <li><a  className = 'link' href = '#'>Projects</a></li>
+                    <li><a  className = 'link' href = '#'>About</a></li>
                 </ul>
             </div>
         </div>
