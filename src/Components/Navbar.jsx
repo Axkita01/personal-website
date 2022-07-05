@@ -1,8 +1,8 @@
 
 import '../Styles/nav.css';
-import pic from './header.jpg';
-import linked from './linkedin.png';
-import git from './git.png';
+import pic from '../assets/header.jpg';
+import linked from '../assets/linkedin.png';
+import git from '../assets/git.png';
 import {useState, useEffect} from 'react';
 
 function Navbar () {
@@ -19,7 +19,6 @@ function Navbar () {
             }
         }
     }
-    console.log(burger)
     /*implement on unmount*/
     function unmount () {
         window.onscroll = null;

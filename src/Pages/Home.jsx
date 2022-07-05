@@ -1,23 +1,23 @@
 import Navbar from '../Components/Navbar';
 import '../Styles/Home.css'
 import ImageGallery from 'react-image-gallery'
-import git from '../Components/git.png'
-import linked from '../Components/linkedin.png'
-import header from '../Components/header.jpg'
+import pic1 from '../assets/pic1.jpg'
+import pic2 from '../assets/pic2.jpg'
+import pic3 from '../assets/pic3.jpg'
 
 function Home() {
 
     const images = [
         {
-            original: linked,
+            original: pic2,
             originalClass: 'home-pic'
         },
         {
-            original: git,
+            original: pic1,
             originalClass: 'home-pic'
         },
         {
-        original: header,
+        original: pic3,
         originalClass: 'home-pic'
         }
       ];
@@ -25,6 +25,7 @@ function Home() {
     return (
         <div className = 'page'>
             <Navbar sticky = 'top'/>
+            <div className='row'>
             <div className = 'partition' id = 'first-part'>
                 <h1>
                     Objective and Information
@@ -37,15 +38,17 @@ function Home() {
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
             </div>
-
-            <div className = 'pic-contain'>
-                <ImageGallery 
-                className = 'gallery' 
-                items = {images} 
-                autoPlay = 'true'
-                />
             </div>
-
+            <div className = 'row'>
+                <div className = 'pic-contain'>
+                    <ImageGallery 
+                    className = 'gallery' 
+                    items = {images} 
+                    autoPlay = 'true'
+                    />
+                </div>
+            </div>
+            <div className='row'>
             <div className = 'partition' id = 'second-part'>
                 <h1>
                     Relevant Coursework and Experience
@@ -57,6 +60,7 @@ function Home() {
                     </ul>
                 
 
+            </div>
             </div>
         </div>
     );

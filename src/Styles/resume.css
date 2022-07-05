@@ -77,4 +77,20 @@
     margin-top: 5px;
     flex-wrap: wrap;
 }
+.res-row {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
 
+.resume-container {
+    width: 40%;
+    height: auto;
+    border-style: solid;
+}
+
+.resume {
+    width: 50%;
+    margin-left: 2%;
+}

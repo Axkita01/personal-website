@@ -1,6 +1,7 @@
 import '../Styles/resume.css';
 import Navbar from '../Components/Navbar';
 import PDF from '../ResumeFall2022.pdf';
+import {Document, Page} from 'react-pdf/dist/esm/entry.webpack'
 
 function Resume() {
     return (
@@ -10,6 +11,20 @@ function Resume() {
                 <h1 className = 'header'>
                     Alexander Kita
                 </h1>
+            
+            <div className = 'res-row'>
+                <img src = {require('../assets/ECEResume-1.jpg')} className= 'resume'></img>
+                
+                <div className='text-container'>
+                    <p>
+                        This is my resume. It means a lot to me I hope
+                        People like it so i can feel good pls :)
+                    </p>
+                </div>
+            </div>
+            </div>
+               
+                {/*
                 <div className = 'block' id = 'education'>
                     <h2>
                         Education
@@ -129,8 +144,8 @@ function Resume() {
             <a href = {PDF} className = 'resdown' download = '../ResumeFall2022.pdf'>
                 Resume Download
             </a>
-        </div>
-    </div>
+    */}</div>
+    
     );
 }
 
