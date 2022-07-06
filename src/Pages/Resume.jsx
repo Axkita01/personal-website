@@ -8,23 +8,24 @@ function Resume() {
         <div>
             <Navbar/>
             <div className = 'page'>
+            <div className = 'res-row'>
                 <h1 className = 'header'>
                     Alexander Kita
                 </h1>
+            </div>
             
             <div className = 'res-row'>
                 <img src = {require('../assets/ECEResume-1.jpg')} className= 'resume'></img>
                 
-                <div className='text-container'>
-                    <p>
-                        This is my resume. It means a lot to me I hope
-                        People like it so i can feel good pls :)
-                    </p>
-                </div>
+            </div>
+            <div className='res-row'>
+                <a href = {PDF} className = 'resdown' download = '../ResumeFall2022.pdf'>
+                    Resume Download
+                </a>
             </div>
             </div>
                
-                {/*
+                
                 <div className = 'block' id = 'education'>
                     <h2>
                         Education
@@ -141,10 +142,7 @@ function Resume() {
                     <li>Excel</li>
                 </ul>
             </div>
-            <a href = {PDF} className = 'resdown' download = '../ResumeFall2022.pdf'>
-                Resume Download
-            </a>
-    */}</div>
+    </div>
     
     );
 }

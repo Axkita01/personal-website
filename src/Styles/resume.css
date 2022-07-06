@@ -82,6 +82,8 @@
     flex-direction: row;
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
 }
 
 .resume-container {
@@ -92,5 +94,7 @@
 
 .resume {
     width: 50%;
-    margin-left: 2%;
+    position: relative;
+    right: 1vw;
+    border-style: solid;
 }

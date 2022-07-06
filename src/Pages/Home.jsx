@@ -10,15 +10,19 @@ function Home() {
     const images = [
         {
             original: pic2,
-            originalClass: 'home-pic'
+            originalClass: 'home-pic',
+            thumbnailWidth: '20vw',
+            thumbnailHeight: 'auto'     
         },
+
         {
             original: pic1,
             originalClass: 'home-pic'
         },
+        
         {
-        original: pic3,
-        originalClass: 'home-pic'
+            original: pic3,
+            originalClass: 'home-pic'
         }
       ];
 
@@ -42,7 +46,7 @@ function Home() {
             <div className = 'row'>
                 <div className = 'pic-contain'>
                     <ImageGallery 
-                    className = 'gallery' 
+                    additionalClass='home-pic'
                     items = {images} 
                     autoPlay = 'true'
                     />
