@@ -24,25 +24,21 @@
 }
 
 .partition h1 {
-    margin-bottom: 1vw;
-   
+    margin-bottom: .2vw;
 }
 
-.partition p {
-    margin-bottom: 1px;
-    margin-top: 0px;
-}
 
 .paragraph {
     line-height: 2;
-    margin-left: 2vw;
+    padding: 0;
 }
  
 .partition {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: left;
+   align-items: center;
+   text-align: center;
    margin-top: 5vw;
    border-width: 1px;
    border-style: solid;
@@ -51,9 +47,7 @@
    font-size: 1.2vw;
    border-color: black;
    box-shadow: 10px, 10px;
-   padding-left: 5%;
    margin-left: 10%;
-   padding-bottom: 1%;
    margin-right: 10%;
    box-shadow: 10px 5px 5px rgb(44, 44, 44);
    

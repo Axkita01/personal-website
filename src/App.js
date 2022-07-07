@@ -5,6 +5,7 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import Home from './Pages/Home';
 import Resume from './Pages/Resume';
 import Projects from './Pages/Projects';
+import Navbar from './Components/Navbar';
 
 
 
@@ -12,6 +13,7 @@ import Projects from './Pages/Projects';
 function App() {
   return (
     <div>
+      <Navbar></Navbar>
       <Router>
         <Routes>
           <Route exact path = '/' element = {<Home/>}></Route>

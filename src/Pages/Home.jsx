@@ -27,8 +27,7 @@ function Home() {
       ];
 
     return (
-        <div className = 'page'>
-            <Navbar sticky = 'top'/>
+        <div className = 'page' style = {{paddingTop: 60}}>
             <div className='row'>
             <div className = 'partition' id = 'first-part'>
                 <h1>

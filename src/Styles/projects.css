@@ -9,15 +9,32 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: .5vw;
     padding-left: 0px;
 }
 
 .Project-list li {
     display: flex;
+    width: 100%;
+    justify-content: left;
+    font-size: 3vw;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2vw;
+}
+
+.Project-list li img {
+    height: auto;
+    width: 5vw;
+    position: relative;
+    top: .4vw;
+    margin-right: 1vw;
+    border-style: solid;
+    border-color: rgb(86, 199, 255);
 }
 
 .header {
-    margin-bottom: 5px;
+    margin-bottom: 2vw;
+    font-size: 6vw;
 }
 

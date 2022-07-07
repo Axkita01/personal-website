@@ -5,8 +5,8 @@ import {Document, Page} from 'react-pdf/dist/esm/entry.webpack'
 
 function Resume() {
     return (
-        <div>
-            <Navbar/>
+        <div style = {{paddingTop: 60}}>
+            
             <div className = 'page'>
             <div className = 'res-row'>
                 <h1 className = 'header'>
@@ -15,7 +15,7 @@ function Resume() {
             </div>
             
             <div className = 'res-row'>
-                <img src = {require('../assets/ECEResume-1.jpg')} className= 'resume'></img>
+                <img src = {require('../assets/ECEResume_00_00.jpg')} className= 'resume'></img>
                 
             </div>
             <div className='res-row'>
@@ -25,7 +25,8 @@ function Resume() {
             </div>
             </div>
                
-                
+            <div className = 'plain-text'>
+                <h1>Plain Text Resume</h1>
                 <div className = 'block' id = 'education'>
                     <h2>
                         Education
@@ -44,7 +45,7 @@ function Resume() {
 
                     <div className = 'item'>
                         <h4>
-                            University of Texas at Austin | Computer Engineeering
+                            University of Texas at Austin | Electrical and Computer Engineeering
                         </h4>
                         <p className = 'timeframe'>
                             Fall 2020 - Spring 2024
@@ -105,16 +106,15 @@ function Resume() {
 
                     <div className = 'item'>
                         <h4>
-                            Retail Associate | Famous Footwear
+                            Co-op Engineer | Ineos
                         </h4>
                         <p className = 'timeframe'>
                             Summer 2021
                         </p>
                         <p className = 'description'>
-                        Assisted with day-to-day functions such as 
-                        working the register, unpacking shipments, 
-                        and <br/> providing customer service. 
-                        Worked 15-35 hours per week.
+                        Did projects involving changes on-site and 
+                        programming the DCS (distributed control systems) 
+                        for the operation of a chemical plant.
                         </p>
                     </div>
                 </div>
@@ -138,10 +138,10 @@ function Resume() {
                     <li>JavaScript</li>
                     <li>HTML/CSS</li>
                     <li>React.js</li>
-                    <li>Orange</li>
-                    <li>Excel</li>
+                    <li>Flask</li> 
                 </ul>
             </div>
+        </div>
     </div>
     
     );
