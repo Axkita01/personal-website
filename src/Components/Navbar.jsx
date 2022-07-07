@@ -86,9 +86,9 @@ function Navbar () {
             </div>
             <div className={burger ? 'uncollapse': 'hidden'}>
                 <ul className='drop-links'>
-                    <li><a  className = 'link' href = '#'>Home</a></li>
-                    <li><a  className = 'link' href = '#'>Resume</a></li>
-                    <li><a  className = 'link' href = '#'>Projects</a></li>
+                    <li><a  className = 'link' href = '/'>Home</a></li>
+                    <li><a  className = 'link' href = '/resume'>Resume</a></li>
+                    <li><a  className = 'link' href = '/projects'>Projects</a></li>
                 </ul>
             </div>
         </div>
