@@ -4,6 +4,7 @@ import ImageGallery from 'react-image-gallery'
 import pic1 from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
 import pic3 from '../assets/pic3.jpg'
+import BottomSquares from '../Components/BottomDesign';
 
 function Home() {
 
@@ -65,6 +66,7 @@ function Home() {
 
             </div>
             </div>
+            <BottomSquares/>
         </div>
     );
 }

@@ -106,6 +106,8 @@
     align-items: center;
     justify-content: center;
     background: white;
+    border-style: solid;
+    border-color: black;
     border-radius: 25%;
     
 }

@@ -4,6 +4,7 @@ import pic from '../assets/header.jpg';
 import linked from '../assets/linkedin.png';
 import git from '../assets/git.png';
 import {useState, useEffect} from 'react';
+import BottomSquares from './BottomDesign';
 
 function Navbar () {
     const [navClass, setClass] = useState('')
@@ -91,6 +92,7 @@ function Navbar () {
                     <li><a  className = 'link' href = '/projects'>Projects</a></li>
                 </ul>
             </div>
+
         </div>
 
     );

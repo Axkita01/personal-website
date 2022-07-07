@@ -11,12 +11,14 @@
     }
 }
 
+
 .page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     resize: horizontal;
     margin-bottom: 5%;
+    height: 100%;
 }
 
 .partition {
@@ -43,7 +45,7 @@
    border-width: 1px;
    border-style: solid;
    width: 70vw;
-   height: 15vw;
+   height: 30%;
    font-size: 1.2vw;
    border-color: black;
    box-shadow: 10px, 10px;
@@ -63,7 +65,7 @@
 .image-gallery {
     width: 50vw;
     margin-top: 3vw;
-    height: 30vw;
+    height: auto;
     object-fit: contain;
     object-position: 0;
     background-color: black;
@@ -77,4 +79,22 @@
     width: 30vw;
     height: 30vw;
     object-fit: contain;
+}
+
+@media screen and (max-width: 600px) {
+    .partition {
+        height: 40vh;
+        width: auto;
+        font-size: 2vh;
+    }
+
+    .image-gallery {
+        width: auto;
+        height: 50vh
+    }
+
+    .image-gallery-slide .image-gallery-image {
+        width: auto;
+        height: 50vh
+    }
 }

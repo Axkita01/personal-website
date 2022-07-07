@@ -1,0 +1,10 @@
+.bottomLine {
+    height: .5vw;
+    width: 100%;
+    background: aqua;
+}
+
+.design {
+    width: 100%;
+    height: 10vw;
+}
