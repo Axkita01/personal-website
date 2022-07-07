@@ -40,7 +40,6 @@ function Navbar () {
                     <li><a className = 'link' href = '/'>Home</a></li>
                     <li><a className = 'link' href = '/resume'>Resume</a></li>
                     <li><a href = '/projects' className = 'link'>Projects</a></li>
-                    <li><a className = 'link' href = '/about'>About</a></li>
                     <li><a 
                         href = 'https://linkedin.com/in/alexander-f-kita'
                         target="_blank" 
@@ -90,7 +89,6 @@ function Navbar () {
                     <li><a  className = 'link' href = '#'>Home</a></li>
                     <li><a  className = 'link' href = '#'>Resume</a></li>
                     <li><a  className = 'link' href = '#'>Projects</a></li>
-                    <li><a  className = 'link' href = '#'>About</a></li>
                 </ul>
             </div>
         </div>

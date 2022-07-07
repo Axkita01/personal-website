@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path = '/' element = {<Home/>}></Route>
-          <Route exact path= 'about' element = {<About/>}></Route>
+          {/*<Route exact path= 'about' element = {<About/>}></Route>*/}
           <Route exact path = 'resume' element = {<Resume/>}></Route>
           <Route exact path = 'projects' element = {<Projects/>}></Route>
         </Routes>
