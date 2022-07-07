@@ -97,7 +97,6 @@
     margin-right: 2vw;
     align-items: center;
     appearance: none;
-    -webkit-appearance: none;
 }
 
 .burger-toggle {
@@ -185,7 +184,7 @@
     }
 
     .mobile-menu {
-        display: flex
+        display: -webkit-flex
     }
 
     .uncollapse {
