@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 .navbar {
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -54,7 +54,7 @@
 .logo {
     height: 40px;
     width: 40px;
-    display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -102,7 +102,7 @@
 .burger-toggle {
     height: 100%;
     width: 100%;
-    display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
     background: white;
@@ -188,7 +188,7 @@
     }
 
     .uncollapse {
-        display: flex;
+        display: -webkit-flex;
         justify-content: center;
         width: 100vw;
     }
