@@ -1,8 +1,12 @@
-
+import '../Styles/BottomDesign.css'
 function BottomSquares () {
     return (
         <div className = 'design'>
-            <div className = 'bottomLine'/>
+            <div id = 'outbox'>
+                <div id = 'inbox'>
+                    <div/>
+                </div>
+            </div>
         </div>
     );
 }

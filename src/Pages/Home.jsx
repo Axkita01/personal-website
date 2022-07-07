@@ -29,7 +29,6 @@ function Home() {
 
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
-            <div className='row'>
             <div className = 'partition' id = 'first-part'>
                 <h1>
                     Objective and Information
@@ -41,9 +40,6 @@ function Home() {
                     and gain experience essential to my future career. I have knowledge of Python, Javascript, 
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
-            </div>
-            </div>
-            <div className = 'row'>
                 <div className = 'pic-contain'>
                     <ImageGallery 
                     additionalClass='home-pic'
@@ -52,21 +48,17 @@ function Home() {
                     />
                 </div>
             </div>
-            <div className='row'>
+            <BottomSquares/>
             <div className = 'partition' id = 'second-part'>
                 <h1>
                     Relevant Coursework and Experience
                 </h1>
-                    <ul>
+                    <ul id = 'experience'>
                         <li>Elements of software design (Python)</li>
                         <li>Introductory Javascript Courses (JavaScript)</li>
                         <li>Projects involving web development</li>
                     </ul>
-                
-
             </div>
-            </div>
-            <BottomSquares/>
         </div>
     );
 }

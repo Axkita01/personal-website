@@ -16,23 +16,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    resize: horizontal;
+    align-items: center;
     margin-bottom: 5%;
+    width: 100%;
     height: 100%;
 }
 
 .partition {
     animation: .7s ease-in FadeInUp;
+
 }
 
 .partition h1 {
     margin-bottom: .2vw;
 }
 
-
+#second-part {
+    margin-top: 0;
+}
 .paragraph {
     line-height: 2;
     padding: 0;
+    width: 100%;
 }
  
 .partition {
@@ -41,18 +46,11 @@
    justify-content: center;
    align-items: center;
    text-align: center;
-   margin-top: 5vw;
-   border-width: 1px;
-   border-style: solid;
-   width: 70vw;
-   height: 30%;
-   font-size: 1.2vw;
-   border-color: black;
+   margin-top: 5%;
+   font-size: 2vw;
+   width: 70%;
+   height: 100%;
    box-shadow: 10px, 10px;
-   margin-left: 10%;
-   margin-right: 10%;
-   box-shadow: 10px 5px 5px rgb(44, 44, 44);
-   
 }
 
 
@@ -72,7 +70,21 @@
     border-style: solid;
     border-color: rgb(86, 199, 255);
     border-width: 10%;
+    margin-bottom: 3vw;
 
+}
+
+#gal-text-row {
+    object-fit: contain;
+    display: flex;
+}
+
+#experience {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    flex-direction: column;
 }
 
 .image-gallery-slide .image-gallery-image {
@@ -81,20 +93,3 @@
     object-fit: contain;
 }
 
-@media screen and (max-width: 600px) {
-    .partition {
-        height: 40vh;
-        width: auto;
-        font-size: 2vh;
-    }
-
-    .image-gallery {
-        width: auto;
-        height: 50vh
-    }
-
-    .image-gallery-slide .image-gallery-image {
-        width: auto;
-        height: 50vh
-    }
-}
