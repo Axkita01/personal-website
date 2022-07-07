@@ -95,6 +95,7 @@
     position: absolute;
     right: 0px;
     margin-right: 2vw;
+    align-items: center;
 }
 
 .burger-toggle {
