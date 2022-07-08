@@ -1,13 +1,12 @@
 import '../Styles/resume.css';
-import Navbar from '../Components/Navbar';
 import PDF from '../ResumeFall2022.pdf';
-import {Document, Page} from 'react-pdf/dist/esm/entry.webpack'
+import BottomSquares from '../Components/BottomDesign';
 
 function Resume() {
     return (
         <div style = {{paddingTop: 60}}>
             
-            <div className = 'page'>
+        <div style = {{backgroundColor: 'white'}}>
             <div className = 'res-row'>
                 <h1 className = 'header'>
                     Alexander Kita
@@ -18,16 +17,16 @@ function Resume() {
                 <img src = {require('../assets/ECEResume_00_00.jpg')} className= 'resume'></img>
                 
             </div>
-            <div className='res-row'>
+            <div className='res-row' style = {{marginBottom: 0}}>
                 <a href = {PDF} className = 'resdown' download = '../ResumeFall2022.pdf'>
                     Resume Download
                 </a>
             </div>
             </div>
-               
+            <BottomSquares/>
             <div className = 'plain-text'>
                 <h1>Plain Text Resume</h1>
-                <div className = 'block' id = 'education'>
+                <div className = 'block'>
                     <h2>
                         Education
                     </h2>
@@ -57,7 +56,7 @@ function Resume() {
 
                 </div>
 
-                <div className = 'block' id = 'experience'>
+                <div className = 'block'>
                     <h2>
                         Experience
                     </h2>
