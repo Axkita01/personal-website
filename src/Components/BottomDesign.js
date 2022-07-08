@@ -4,7 +4,7 @@ function BottomSquares () {
         <div className = 'design'>
             <div id = 'outbox'>
                 <div id = 'inbox'>
-                    <div/>
+                    <div className = 'mid-square'/>
                 </div>
             </div>
         </div>

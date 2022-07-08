@@ -29,6 +29,7 @@ function Home() {
 
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
+            <div className = 'home-container'>
             <div className = 'partition' id = 'first-part'>
                 <h1>
                     Objective and Information
@@ -47,6 +48,7 @@ function Home() {
                     autoPlay = 'true'
                     />
                 </div>
+            </div>
             </div>
             <BottomSquares/>
             <div className = 'partition' id = 'second-part'>

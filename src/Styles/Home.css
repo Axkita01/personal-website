@@ -10,15 +10,23 @@
         opacity: 1;
     }
 }
-
-
+html {
+    background: rgb(199, 198, 198);
+}
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
 .page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
     width: 100%;
+    background: rgb(199, 198, 198);
     height: 100%;
 }
 
@@ -33,6 +41,7 @@
 
 #second-part {
     margin-top: 0;
+    background: rgb(199, 198, 198)
 }
 .paragraph {
     line-height: 2;

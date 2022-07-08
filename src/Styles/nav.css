@@ -15,7 +15,7 @@
     border-bottom-style: solid;
     box-shadow: none;
     transition: all .3s ease 0s;
-    z-index: 2;
+    z-index: 5;
 }
 
 /*fix delayed sliding on resize*/
