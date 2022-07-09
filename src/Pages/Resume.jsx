@@ -4,7 +4,7 @@ import BottomSquares from '../Components/BottomDesign';
 
 function Resume() {
     return (
-        <div style = {{paddingTop: 60}}>
+        <div style = {{paddingTop: 60}} className = 'res-page'>
             
         <div style = {{backgroundColor: 'white'}}>
             <div className = 'res-row'>

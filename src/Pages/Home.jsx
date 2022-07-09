@@ -41,13 +41,13 @@ function Home() {
                     and gain experience essential to my future career. I have knowledge of Python, Javascript, 
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
-                <div className = 'pic-contain'>
+                
                     <ImageGallery 
                     additionalClass='home-pic'
                     items = {images} 
                     autoPlay = 'true'
                     />
-                </div>
+                
             </div>
             </div>
             <BottomSquares/>
