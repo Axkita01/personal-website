@@ -52,3 +52,11 @@
     
 }
 
+
+@media screen and (max-width: 600px) {
+    .Project-list li {
+        font-size: 2vw;
+        width: 30vw
+    }
+}
+
