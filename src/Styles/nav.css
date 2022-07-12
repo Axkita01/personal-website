@@ -116,7 +116,6 @@
 .lines {
     display: -webkit-flex;
     position: relative;
-    top: 8.7%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -129,8 +128,8 @@
 .line {
     position: relative;
     height: 5%;
-    width: 90%;
-    margin-bottom: 30%;
+    width: 100%;
+    margin-top: 30%;
     height: 6%;
     background: black;
 }

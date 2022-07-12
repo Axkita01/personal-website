@@ -54,6 +54,7 @@
 
 
 @media screen and (max-width: 600px) {
+    /*fix border stuff*/
     .Project-list li {
         font-size: 2vw;
         width: 30vw

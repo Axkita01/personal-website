@@ -4,7 +4,7 @@ import pic from '../assets/header.jpg';
 import linked from '../assets/linkedin.png';
 import git from '../assets/git.png';
 import {useState, useEffect} from 'react';
-import BottomSquares from './BottomDesign';
+
 
 function Navbar () {
     const [navClass, setClass] = useState('')
@@ -75,7 +75,7 @@ function Navbar () {
                 className = {!burger ? 'burger-toggle': 'hidden'}
                 onClick = {() => setBurger(!burger)}>
                     <ul className='lines'>
-                        <div className = 'line'/>
+                        <div className = 'line' style = {{marginTop:0}}/>
                         <div className = 'line'/>
                         <div className = 'line'/>  
                     </ul>  
