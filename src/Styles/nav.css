@@ -114,6 +114,12 @@
 
 /*make this look nice*/
 .lines {
+    display: -webkit-flex;
+    position: relative;
+    top: 8.7%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     padding: 0;
     height: 40px;
@@ -122,9 +128,10 @@
 
 .line {
     position: relative;
-    top: 5%;
-    margin-top: 30%;
     height: 5%;
+    width: 90%;
+    margin-bottom: 30%;
+    height: 6%;
     background: black;
 }
 
@@ -155,11 +162,8 @@
 }
 
 .drop-links {
-    display: flex;
     list-style: none;
     margin: 0;
-    align-items: center;
-    justify-content: center;
     padding: 0;
     width: 100%;
 }
@@ -183,6 +187,8 @@
 .drop-links li a:hover {
     color: rgb(168, 165, 165);
 }
+
+/*shrink gallery buttons*/
 @media screen and (max-width: 600px) {
     .navLinks {
         display: none;
