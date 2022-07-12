@@ -1,31 +1,51 @@
 import Navbar from '../Components/Navbar.jsx';
 import '../Styles/projects.css'
-import {Row, Col} from 'react-bootstrap'
+import {Row, Col, Container} from 'react-bootstrap'
+import BottomSquares from '../Components/BottomDesign.js';
 
 function Projects() {
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
+            <Container className='first-half'>
             <h1 className = 'header'>
                 Projects
             </h1>
             <Row>
             <ul className = 'Project-list'>
-                <li>
-                    <img src = {require('../assets/header.jpg')}/>
-                    <a>Personal Website (Currently Viewing)</a>
+                <li style = {{marginRight: '5%'}}>
+                    <h5>Longhorn Smash Website (WIP)</h5>
+                    <a>www.longhornsmash.com</a>
+                    <p>
+                        Website for the smash organization at UT Austin
+                    </p>
+                </li>
+
+                <li style = {{marginRight: '5%'}}>
+                    <h5>Personal Website (Currently Viewing)</h5>
                 </li>
 
                 <li>
-                    <img src = {require('../assets/favicon.ico')}/>
-                    <a>Longhorn Smash Website (WIP)</a>
-                </li>
-
-                <li>
-                    <img src = {require('../assets/header.jpg')}/>
-                    <a>UT Help Hours Website (WIP)</a>
+                    <h5>UT Help Hours Website (WIP)</h5>
                 </li>
             </ul>
             </Row>
+            </Container>
+
+            <BottomSquares/>
+
+            <Container>
+            <Row>
+                <h1 style = {{marginBottom: '1%'}}>Projects Overview</h1>
+            </Row>
+            <Row>
+                <p style = {{marginTop:0}}>
+                    The above projects are current and past projects I have participated
+                    in. Throughout these projects, I have had the opportunity to improve
+                    and gain new skills. I hope to continue doing projects and build my
+                    programming skills.
+                </p>
+            </Row>
+            </Container>
         </div>
     );
 }

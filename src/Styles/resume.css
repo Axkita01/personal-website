@@ -10,6 +10,7 @@
     }
 }
 
+
 .res-page {
     display: flex;
     flex-direction: column;
@@ -94,6 +95,8 @@
     align-items: center;
 }
 
-.plain-text h1 {
-    font-size: 20%;
+.row p {
+    width: 70%;
+    line-height: 2;
+    font-size: 100%;
 }
