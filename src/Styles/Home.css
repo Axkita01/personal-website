@@ -105,21 +105,33 @@ html {
 
 @media screen and (max-width: 600px) {
     .image-gallery-slide .image-gallery-image {
-        width: 30vw;
-        height: 30vw;
+        width: auto;
+        height: 30vh;
         object-fit: contain;
     }
 
     .image-gallery {
-        width: 50vw;
+        width: 40vh;
         margin-top: 3vw;
-        height: auto;
-        object-fit: contain;
+        height: 30vh;
         object-position: 0;
         background-color: black;
         border-style: solid;
         margin-bottom: 3vw;
-    
+    }
+    .paragraph {
+        font-size: 2vh
     }
 
+    .partition h1 {
+        font-size: 4vh;
+    }
+
+    .partition {
+        font-size: 3vh
+    }
+
+    #experience li {
+        font-size: 2vh
+    }
 }
