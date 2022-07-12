@@ -14,14 +14,22 @@ function Projects() {
             <ul className = 'Project-list'>
                 <li style = {{marginRight: '5%'}}>
                     <h5>Longhorn Smash Website (WIP)</h5>
-                    <a>www.longhornsmash.com</a>
+                    <a target = '_blank' href = 'https://google.com'>
+                        http://www.longhornsmash.com
+                    </a>
                     <p>
-                        Website for the smash organization at UT Austin
+                        Website for the smash brothers organization at UT Austin
                     </p>
                 </li>
 
                 <li style = {{marginRight: '5%'}}>
                     <h5>Personal Website (Currently Viewing)</h5>
+                    <a href = 'https://afkcoding.com'>
+                        https://afkcoding.com
+                    </a>
+                    <p>
+                        Portfolio website
+                    </p>
                 </li>
 
                 <li>
