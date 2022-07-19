@@ -1,4 +1,4 @@
-import Navbar from '../Components/Navbar';
+
 import '../Styles/Home.css'
 import ImageGallery from 'react-image-gallery'
 import pic1 from '../assets/pic1.jpg'
@@ -53,12 +53,47 @@ function Home() {
             <BottomSquares/>
             <div className = 'partition' id = 'second-part'>
                 <h1>
-                    Relevant Coursework and Experience
+                    Languages/Frameworks
                 </h1>
                     <ul id = 'experience'>
-                        <li>Elements of software design (Python)</li>
-                        <li>Introductory Javascript Courses (JavaScript)</li>
-                        <li>Projects involving web development</li>
+                        <li style = {{marginTop: "10%"}}>
+                            <img  
+                            alt = 'python logo'
+                            src = {require('../assets/python-logo.png')}
+                            />
+                            <h2>Python</h2>
+                        </li>
+
+                        <li>
+                            <img 
+                            alt = 'JS logo'
+                            src = {require('../assets/JavaScript-Logo.png')}
+                            />
+                            <h2>JavaScript</h2>
+                        </li>
+
+                        <li>
+                            <img 
+                            src = {require('../assets/html-logo.png')}
+                            alt = 'HTML logo'
+                            />
+                            <h2>HTML/CSS</h2>
+                        </li>
+
+                        <li>
+                            <img 
+                            src = {require('../assets/flask-logo.png')}
+                            alt = 'flask logo'
+                            />
+                            <h2>Flask</h2>
+                        </li>
+
+                        <li>
+                            <img 
+                            src = {require('../assets/logo-react-icon.png')}
+                            alt = 'reactjs logo'
+                            />
+                            <h2>ReactJS</h2></li>
                     </ul>
             </div>
         </div>

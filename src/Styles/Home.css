@@ -10,9 +10,7 @@
         opacity: 1;
     }
 }
-html {
-    background: rgb(199, 198, 198);
-}
+
 .home-container {
     display: flex;
     align-items: center;
@@ -89,11 +87,29 @@ html {
 }
 
 #experience {
-    display: flex;
+    display: grid;
     padding: 0;
     list-style: none;
     margin: 0;
     flex-direction: column;
+}
+
+#experience h2 {
+    margin: 0;
+    margin-left: 10%;
+}
+
+#experience li {
+    margin-top: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    object-position: 0;
+}
+
+#experience li img {
+    height: 80%;
 }
 
 .image-gallery-slide .image-gallery-image {
@@ -109,7 +125,8 @@ html {
         height: 30vh;
         object-fit: contain;
     }
-
+    
+    /*fix image fitting*/
     .image-gallery {
         width: 40vh;
         margin-top: 3vw;
