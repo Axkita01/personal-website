@@ -42,7 +42,7 @@ function Projects() {
             <BottomSquares/>
 
             <Container>
-            <Row>
+            <Row className = 'second-header'>
                 <h1 style = {{marginBottom: '1%'}}>Projects Overview</h1>
             </Row>
             <Row id = 'project-second'>
