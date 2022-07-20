@@ -38,6 +38,7 @@
 .Project-list li p {
     margin: 5%;
     font-size: 70%;
+    white-space: wrap;
     width: 90%
 }
 
