@@ -18,7 +18,7 @@ function Projects() {
                         http://www.longhornsmash.com
                     </a>
                     <p>
-                        Website for the smash brothers organization at UT Austin
+                        Website for the super smash brothers organization at UT Austin
                     </p>
                 </li>
 
@@ -45,8 +45,8 @@ function Projects() {
             <Row>
                 <h1 style = {{marginBottom: '1%'}}>Projects Overview</h1>
             </Row>
-            <Row>
-                <p style = {{marginTop:0}}>
+            <Row id = 'project-second'>
+                <p style = {{marginTop:0, width:'60%'}}>
                     The above projects are current and past projects I have participated
                     in. Throughout these projects, I have had the opportunity to improve
                     and gain new skills. I hope to continue doing projects and build my

@@ -126,6 +126,10 @@
         object-fit: contain;
     }
     
+    /*fix arrows*/
+    .image-gallery-svg {
+        height: 10%;
+    }
     /*fix image fitting*/
     .image-gallery {
         width: 40vh;

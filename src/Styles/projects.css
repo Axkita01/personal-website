@@ -38,6 +38,7 @@
 .Project-list li p {
     margin: 5%;
     font-size: 70%;
+    width: 90%
 }
 
 
@@ -52,12 +53,16 @@
     
 }
 
+#project-second{
+    justify-content: center;
+}
 
 @media screen and (max-width: 600px) {
     /*fix border stuff*/
     .Project-list li {
         font-size: 2vw;
-        width: 30vw
+        width: 30vw;
+        border-width: 5%;
     }
 }
 
