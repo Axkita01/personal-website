@@ -62,7 +62,12 @@
     .Project-list li {
         font-size: 2vw;
         width: 30vw;
-        border-width: 5%;
+        height: 25vw;
+        border-width: 1vw;
+    }
+
+    * {
+        font-size: 1rem;
     }
 }
 
