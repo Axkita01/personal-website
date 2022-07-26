@@ -1,4 +1,4 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
+
 
 @keyframes FadeInUp {
     from {
@@ -112,33 +112,11 @@
     height: 80%;
 }
 
-.image-gallery-slide .image-gallery-image {
-    width: 45%;
-    height: auto;
-    object-fit: contain;
-}
-
-
 @media screen and (max-width: 600px) {
-    .image-gallery-slide .image-gallery-image {
-        width: auto;
-        height: 30vh;
-        object-fit: contain;
-    }
-    
-    /*fix arrows*/
-    .image-gallery-svg {
-        height: 10%;
-    }
     /*fix image fitting*/
-    .image-gallery {
-        width: 40vh;
-        margin-top: 3vw;
-        height: 30vh;
-        object-position: 0;
-        background-color: black;
-        border-style: solid;
-        margin-bottom: 3vw;
+    .gallery {
+        width: 50vw;
+        height: auto;
     }
     .paragraph {
         font-size: 2vh

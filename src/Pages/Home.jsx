@@ -1,31 +1,11 @@
-
+import Images from '../Components/Carosel.js'
 import '../Styles/Home.css'
-import ImageGallery from 'react-image-gallery'
 import pic1 from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
 import pic3 from '../assets/pic3.jpg'
 import BottomSquares from '../Components/BottomDesign';
 
 function Home() {
-
-    const images = [
-        {
-            original: pic2,
-            originalClass: 'home-pic',
-            thumbnailWidth: '20vw',
-            thumbnailHeight: 'auto'     
-        },
-
-        {
-            original: pic1,
-            originalClass: 'home-pic'
-        },
-        
-        {
-            original: pic3,
-            originalClass: 'home-pic'
-        }
-      ];
 
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
@@ -41,11 +21,12 @@ function Home() {
                     and gain experience essential to my future career. I have knowledge of Python, Javascript, 
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
-                
-                    <ImageGallery 
-                    additionalClass='home-pic'
-                    items = {images} 
-                    autoPlay = 'true'
+
+                    <Images 
+                    className = 'gallery'
+                    img1 = {pic1}
+                    img2 = {pic2}
+                    img3 = {pic3}
                     />
                 
             </div>
