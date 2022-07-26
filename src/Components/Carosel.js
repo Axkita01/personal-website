@@ -3,7 +3,7 @@ import pic1 from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
 import pic3 from '../assets/pic3.jpg'
 
-export default function Images (props) {
+export default function Images () {
   return (
     <Carousel 
     sx={{ width: 320 }} 
