@@ -23,19 +23,21 @@ function Home() {
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
                     {/*Accounting for Mobile*/}
-                    {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? <Images 
+                    {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 
+                    <div style = {{height: '40vh', width: '40vh'}}>
+                    <Images 
                     className = 'gallery'
                     img1 = {pic1}
                     img2 = {pic2}
                     img3 = {pic3}
-                    />: 
+                    />
+                    </div>: 
                     <div 
                     style = {{
-                        width: 320, 
-                        maxWidth: 320, 
+                        width: '40vh', 
                         borderStyle: 'solid', 
-                        height: 320,
-                        maxHeight: 320}}>
+                        height: '40vh',
+                        }}>
                         <img src = {pic4} style = {{height: '100%', width: 'auto'}}/>
                     </div>}
                 

@@ -6,17 +6,16 @@ import pic3 from '../assets/pic3.jpg'
 export default function Images () {
   return (
     <Carousel 
-    sx={{ width: 320, maxWidth: 320 }} 
+    sx={{width: '100%'}} 
     mx="auto" 
     withIndicators 
-    height={200}
     slideSize="100%"
     loop
     align="center"
     >
-      <Carousel.Slide><img style = {{height: '100%'}} src = {pic1}/></Carousel.Slide>
-      <Carousel.Slide><img style = {{height: '100%'}} src = {pic2}/></Carousel.Slide>
-      <Carousel.Slide><img style = {{height: '100%'}} src = {pic3}/></Carousel.Slide>
+      <Carousel.Slide><img style = {{width: '100%'}} src = {pic1}/></Carousel.Slide>
+      <Carousel.Slide><img style = {{width: '100%'}} src = {pic2}/></Carousel.Slide>
+      <Carousel.Slide><img style = {{width: '100%'}} src = {pic3}/></Carousel.Slide>
       {/* ...other slides */}
     </Carousel>
   );
