@@ -23,7 +23,7 @@ function Home() {
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
                     {/*Accounting for Mobile*/}
-                    {!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? <Images 
+                    {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? <Images 
                     className = 'gallery'
                     img1 = {pic1}
                     img2 = {pic2}
