@@ -30,7 +30,12 @@ function Home() {
                     img3 = {pic3}
                     />: 
                     <div 
-                    style = {{width: 320, maxWidth: 320, borderStyle: 'solid'}}>
+                    style = {{
+                        width: 320, 
+                        maxWidth: 320, 
+                        borderStyle: 'solid', 
+                        height: 320,
+                        maxHeight: 320}}>
                         <img src = {pic4} style = {{height: '100%', width: 'auto'}}/>
                     </div>}
                 
