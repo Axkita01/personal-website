@@ -28,7 +28,11 @@ function Home() {
                     img1 = {pic1}
                     img2 = {pic2}
                     img3 = {pic3}
-                    />: <img src = {pic4}/>}
+                    />: 
+                    <div 
+                    style = {{width: 320, maxWidth: 320, borderStyle: 'solid'}}>
+                        <img src = {pic4}/>
+                    </div>}
                 
             </div>
             </div>
