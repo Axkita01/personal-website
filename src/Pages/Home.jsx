@@ -31,7 +31,7 @@ function Home() {
                     />: 
                     <div 
                     style = {{width: 320, maxWidth: 320, borderStyle: 'solid'}}>
-                        <img src = {pic4}/>
+                        <img src = {pic4} style = {{height: '100%', width: 'auto'}}/>
                     </div>}
                 
             </div>
