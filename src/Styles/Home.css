@@ -44,7 +44,7 @@
 .paragraph {
     line-height: 2;
     padding: 0;
-    width: 100%;
+    width: 80%;
 }
  
 .partition {
@@ -66,20 +66,6 @@
     justify-content: center;
 }
 
-
-.image-gallery {
-    width: 70%;
-    margin-top: 5%;
-    height: auto;
-    object-fit: contain;
-    object-position: 0;
-    background-color: black;
-    border-style: solid;
-    border-color: rgb(86, 199, 255);
-    border-width: 10%;
-    margin-bottom: 3vw;
-
-}
 
 #gal-text-row {
     object-fit: contain;
