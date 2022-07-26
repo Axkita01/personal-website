@@ -6,7 +6,7 @@ import pic3 from '../assets/pic3.jpg'
 export default function Images () {
   return (
     <Carousel 
-    sx={{ width: 320 }} 
+    sx={{ width: 320, maxWidth: 320 }} 
     mx="auto" 
     withIndicators 
     height={200}
