@@ -1,47 +1,17 @@
 import Navbar from '../Components/Navbar.jsx';
 import '../Styles/projects.css'
-import {Row, Col, Container} from 'react-bootstrap'
+import {Row, Container} from 'react-bootstrap'
 import BottomSquares from '../Components/BottomDesign.js';
+import ProjectCard from '../Components/ProjectCard.js';
+
 
 function Projects() {
+    let lswebsite_desc = "Reworked and added features to the official website of the super smash brothers organization's website at UT Austin."
+    let speed_project_desc = "Created an app to play the card game called speed using React Native."
+    let personal_website_desc = ""
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
             <Container className='first-half'>
-            <h1 className = 'header'>
-                Projects
-            </h1>
-            <Row>
-            <ul className = 'Project-list'>
-                <li style = {{marginRight: '5%'}}>
-                    <h5>Longhorn Smash Website (WIP)</h5>
-                    <a target = '_blank' href = 'https://google.com'>
-                        http://www.longhornsmash.com
-                    </a>
-                    <p>
-                        Website for the super smash brothers organization at UT Austin
-                    </p>
-                </li>
-
-                <li style = {{marginRight: '5%'}}>
-                    <h5>Personal Website (Currently Viewing)</h5>
-                    <a href = 'https://afkcoding.com'>
-                        https://afkcoding.com
-                    </a>
-                    <p>
-                        Portfolio website
-                    </p>
-                </li>
-
-                <li>
-                    <h5>UT Help Hours Website (WIP)</h5>
-                </li>
-            </ul>
-            </Row>
-            </Container>
-
-            <BottomSquares/>
-
-            <Container>
             <Row className = 'second-header'>
                 <h1 style = {{marginBottom: '1%'}}>Projects Overview</h1>
             </Row>
@@ -54,6 +24,40 @@ function Projects() {
                 </p>
             </Row>
             </Container>
+
+            <BottomSquares/>
+
+            <h1 className = 'header'>
+                Projects
+            </h1>
+            <Row 
+            style = {{
+                width: '100%', 
+                display: 'flex', 
+                alignItems: 'center', 
+                flexDirection: 'column'
+                }}>
+                <ProjectCard 
+                desc = {lswebsite_desc} 
+                title = 'Longhorn Smash Website' 
+                windowWidth = {window.innerWidth}
+                link = 'https://Longhornsmash.com'
+                git = 'https://github.com/JackByers2/tempLSWebsite'/>
+
+                <ProjectCard 
+                desc = {speed_project_desc} 
+                title = 'Speed Card Game App' 
+                windowWidth = {window.innerWidth}
+                link = 'Work in progress.'
+                git = 'https://github.com/Axkita01/speed-project'/>
+
+                <ProjectCard 
+                desc = {personal_website_desc} 
+                title = 'Personal Website' 
+                windowWidth = {window.innerWidth}
+                link = 'Currently Viewing.'
+                git = 'https://github.com/Axkita01/personal-website'/>
+            </Row>
         </div>
     );
 }

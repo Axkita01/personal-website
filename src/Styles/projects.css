@@ -9,53 +9,9 @@
     background: white;
 }
 
-.Project-list {
-    list-style:none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-
-}
-
-.Project-list li {
-    display: flex;
-    font-size: 70%;
-    flex-direction: column;
-    border-style: solid;
-    justify-content: top;
-    background: rgb(199, 198, 198);
-    height: 95%;
-    margin: 0;
-    width: 100%;
-}
-
-.Project-list li h5{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 4%;
-    margin-bottom: 5%;
-}
-
-.Project-list li p {
-    margin-left: 5%;
-    font-size: 70%;
-    white-space: wrap;
-    width: 90%
-}
-
-
-.Project-list li a {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 1%;
-    font-size: 80%;
-}
 
 .header {
     margin-bottom: 1%;
-    
 }
 
 #project-second{
@@ -64,11 +20,6 @@
 
 @media screen and (max-width: 600px) {
     /*fix border stuff*/
-    .Project-list li {
-        font-size: 2vw;
-        width: 30vw;
-        border-width: .2vw;
-    }
 
     .header{
         font-size: 6vw;
