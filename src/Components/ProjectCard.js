@@ -1,9 +1,11 @@
 import {Card} from 'react-bootstrap';
+import '../Styles/Card.css'
 
 export default function ProjectCard(props) {
     const radius = props.windowWidth > 600 ? '10px': '5px'
     return (
-        <Card 
+        <Card
+        className = 'card'
         style = {{
             width: '50%',
             borderStyle: 'solid',
@@ -18,7 +20,9 @@ export default function ProjectCard(props) {
                     {props.title}
                 </Card.Title>
 
-                <Card.Text style = {{marginLeft: '5%', marginTop: 0, fontSize: '1rem'}}>
+                <Card.Text 
+                className = 'card-desc'
+                style = {{marginLeft: '5%', marginTop: 0, fontSize: '1rem'}}>
                     {props.desc}
                 </Card.Text>
 

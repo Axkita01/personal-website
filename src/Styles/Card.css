@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+    .card {
+        height: 40vw;
+        width: 90vw;
+        font-size: 2vw;
+    }
+
+    .card-text {
+        font-size: 2vw !important;
+        margin-left: 5% !important;
+        margin-bottom: 1%;
+    }
+}
