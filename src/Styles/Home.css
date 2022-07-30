@@ -28,10 +28,6 @@
     height: 100%;
 }
 
-.partition {
-    animation: .7s ease-in FadeInUp;
-
-}
 
 .partition h1 {
     margin-bottom: 1%;
@@ -58,6 +54,7 @@
    width: 70%;
    height: 100%;
    box-shadow: 10px, 10px;
+   animation: .7s ease-in FadeInUp;
 }
 
 

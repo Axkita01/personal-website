@@ -1,4 +1,4 @@
-import Navbar from '../Components/Navbar.jsx'
+
 import '../Styles/about.css'
 
 function About () {

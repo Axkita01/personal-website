@@ -27,6 +27,7 @@ function Navbar () {
     
     useEffect(() => {
         mount ()
+       
     }, [])
     return (
         <div className = 'navbar' id = {navClass}>

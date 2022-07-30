@@ -1,4 +1,4 @@
-import Navbar from '../Components/Navbar.jsx';
+
 import '../Styles/projects.css'
 import {Row, Container} from 'react-bootstrap'
 import BottomSquares from '../Components/BottomDesign.js';
@@ -7,8 +7,8 @@ import ProjectCard from '../Components/ProjectCard.js';
 
 function Projects() {
     let lswebsite_desc = "Reworked and added features to the official website of the super smash brothers organization's website at UT Austin."
-    let speed_project_desc = "Created an app to play the card game called speed using React Native."
-    let personal_website_desc = ""
+    let speed_project_desc = "Created an app to play the card game called speed using React Native. Currently a work in progress and will continue to be improved."
+    let personal_website_desc = "The current website being viewed."
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
             <Container className='first-half'>
@@ -16,11 +16,11 @@ function Projects() {
                 <h1 style = {{marginBottom: '1%'}}>Projects Overview</h1>
             </Row>
             <Row id = 'project-second'>
-                <p style = {{marginTop:0, width:'60%'}}>
-                    The above projects are current and past projects I have participated
+                <p>
+                    The below projects are current and past projects I have participated
                     in. Throughout these projects, I have had the opportunity to improve
                     and gain new skills. I hope to continue doing projects and build my
-                    programming skills.
+                    programming skills. Some of the projects may still be a work in progress.
                 </p>
             </Row>
             </Container>
