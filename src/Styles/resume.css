@@ -10,6 +10,17 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .resume {
+        width: 60vw
+    }
+
+    #skills li {
+        width: 6vw;
+        margin-left: .5vw
+    }
+}
+
 
 .res-page {
     display: flex;
