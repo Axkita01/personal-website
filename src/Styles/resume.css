@@ -10,16 +10,6 @@
     }
 }
 
-@media screen and (max-width: 500px) {
-    .resume {
-        width: 80vw
-    }
-
-    #skills li {
-        width: 15vw;
-        margin-left: .5vw
-    }
-}
 
 
 .res-page {
@@ -84,7 +74,7 @@
     white-space: wrap;
     flex-wrap: wrap;
     margin-top: 2%;
-    width: 60%;
+    width: 70%;
     padding-left: 0;
 }
 
@@ -121,4 +111,22 @@
     line-height: 2;
     font-size: 100%;
     animation: 1s ease-in FadeInUp;  
+}
+
+@media screen and (max-width: 600px) {
+    .resume {
+        width: 80vw
+    }
+
+    #skills li {
+        width: 15vw;
+        margin-left: 1vw;
+        position: relative;
+        left: 4vw;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+
 }
