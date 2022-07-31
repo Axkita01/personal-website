@@ -59,6 +59,7 @@
 
 #volunteering ul{
     margin-top: 2%;
+    padding-left: 5%
 }
 
 
@@ -121,12 +122,11 @@
     #skills li {
         width: 15vw;
         margin-left: 1vw;
-        position: relative;
-        left: 4vw;
     }
 
     #skills ul {
         flex-direction: column;
+        padding-left: 3%;
     }
 
 }
