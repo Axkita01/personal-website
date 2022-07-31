@@ -12,11 +12,11 @@
 
 @media screen and (max-width: 500px) {
     .resume {
-        width: 60vw
+        width: 80vw
     }
 
     #skills li {
-        width: 6vw;
+        width: 15vw;
         margin-left: .5vw
     }
 }
