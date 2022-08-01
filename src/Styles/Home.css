@@ -11,6 +11,9 @@
     }
 }
 
+#first-part {
+    margin-top: 0;
+}
 .home-container {
     display: flex;
     align-items: center;

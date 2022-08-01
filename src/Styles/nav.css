@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
+@keyframes rotateBurger {
+    0% {opacity: 1; rotate: 0;}
+    100% {opacity: 0; rotate: 75deg}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-10%); opacity: 0;}
+    to{transform: translateY(0); opacity: 1;}
+}
+
+@keyframes wait {
+    from {opacity: 0;}
+    to {opacity: 0;}
+}
+
+
 .navbar {
     display: -webkit-flex;
     flex-direction: row;
@@ -86,6 +102,7 @@
 
 .hidden {
     display: none;
+    transition: all 1s ease 1s;
 }
 
 .mobile-menu {
@@ -105,11 +122,10 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
-    background: white;
-    border-style: solid;
-    border-color: black;
+    background: transparent;
     border-radius: 25%;
-    
+    border-style: none;
+    animation: rotateBurger .2s ease 0 ;
 }
 
 /*make this look nice*/
@@ -131,7 +147,12 @@
     width: 100%;
     margin-top: 30%;
     height: 6%;
-    background: black;
+    background: white;
+}
+
+.lines:checked{
+    animation: rotateBurger 1s ease 0s ;
+    
 }
 
 #icon:hover {
@@ -157,7 +178,19 @@
     top: 62px;
     left: -.35vw;
     list-style: none;
+    transition: all 1s ease 0s;
+}
 
+#b1 {
+    animation: slideIn .3s ease 0s;
+}
+
+#b2 {
+    animation: wait .3s ease 0s, slideIn .3s ease .3s;
+}
+
+#b3 {
+    animation: wait .6s ease 0s, slideIn .3s ease .6s;
 }
 
 .drop-links {
@@ -168,7 +201,7 @@
 }
 
 .drop-links li {
-    height: 30px;
+    height: 40px;
     background: white;
     border-style: solid;
     border-top: none;
@@ -179,7 +212,7 @@
 
 .drop-links li a {
     position: relative;
-    top: 3px;
+    top: 8px;
     color: rgb(73, 72, 72);
 }
 

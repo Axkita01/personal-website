@@ -20,13 +20,12 @@ function Navbar () {
             }
         }
     }
-    /*implement on unmount*/
-    function unmount () {
-        window.onscroll = null;
-    }
     
     useEffect(() => {
         mount ()
+        return function unMount () {
+            window.onscroll = null
+        }
     }, [])
     return (
         <div className = 'navbar' id = {navClass}>
@@ -75,21 +74,22 @@ function Navbar () {
                 className = {!burger ? 'burger-toggle': 'hidden'}
                 onClick = {() => setBurger(!burger)}>
                     <ul className='lines'>
-                        <div className = 'line' style = {{marginTop:0}}/>
-                        <div className = 'line'/>
-                        <div className = 'line'/>  
+                        <div className = 'line' style = {{marginTop:0}} id= 'line1'/>
+                        <div className = 'line' id = 'line2'/>
+                        <div className = 'line' id = 'line3'/>  
                     </ul>  
                 </button>
                 <button 
                 className = {burger ? 'burger-toggle': 'hidden'}
-                onClick = {() => setBurger(!burger)}>
+                onClick = {() => {setBurger(!burger)}}>
+                <b style = {{color: 'white'}}>&#10005;</b>
                 </button>
             </div>
             <div className={burger ? 'uncollapse': 'hidden'}>
                 <ul className='drop-links'>
-                    <li><a  className = 'link' href = '/'>Home</a></li>
-                    <li><a  className = 'link' href = '/resume'>Resume</a></li>
-                    <li><a  className = 'link' href = '/projects'>Projects</a></li>
+                    <li id = 'b1'><a  className = 'link' href = '/'>Home</a></li>
+                    <li id = 'b2'><a  className = 'link' href = '/resume'>Resume</a></li>
+                    <li id = 'b3'><a  className = 'link' href = '/projects'>Projects</a></li>
                 </ul>
             </div>
 

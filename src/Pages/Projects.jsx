@@ -8,7 +8,7 @@ import ProjectCard from '../Components/ProjectCard.js';
 function Projects() {
     let lswebsite_desc = "Reworked and added features to the official website of the super smash brothers organization's website at UT Austin."
     let speed_project_desc = "Created an app to play the card game called speed using React Native."
-    let personal_website_desc = ""
+    let personal_website_desc = "Personal portfolio website to display my resume and projects."
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
             <Container className='first-half'>

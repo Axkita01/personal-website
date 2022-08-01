@@ -3,6 +3,7 @@
         height: 40vw;
         width: 90vw;
         font-size: 2vw;
+        border-width: .1vw;
     }
 
     .card-text {
