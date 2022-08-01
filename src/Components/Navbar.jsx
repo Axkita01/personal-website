@@ -23,9 +23,13 @@ function Navbar () {
     
     useEffect(() => {
         mount ()
+<<<<<<< HEAD
         return function unMount () {
             window.onscroll = null
         }
+=======
+       
+>>>>>>> 59182516c412146f773d8d94479d3506086bac9a
     }, [])
     return (
         <div className = 'navbar' id = {navClass}>

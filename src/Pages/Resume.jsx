@@ -14,7 +14,7 @@ function Resume() {
             </div>
             
             <div className = 'res-row'>
-                <img src = {require('../assets/ECEResume_00_00.jpg')} className= 'resume'></img>
+                <img src = {require('../assets/ECEResume_00_00.jpg')} className= 'resume'alt = 'resume'></img>
                 
             </div>
             <div className='res-row' style = {{marginBottom: 0}}>

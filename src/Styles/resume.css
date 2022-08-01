@@ -11,6 +11,7 @@
 }
 
 
+
 .res-page {
     display: flex;
     flex-direction: column;
@@ -27,8 +28,7 @@
     width: 70%;
     padding-right: 10%;
     padding-left: 10%;
-    transition: all .5s ease 0s;
-    animation: .7s ease-in FadeInUp;  
+    transition: all .5s ease 0s; 
 }
 
 
@@ -59,18 +59,26 @@
 
 #volunteering ul{
     margin-top: 2%;
+    padding-left: 5%
 }
 
+
 #skills li {
-    margin-left: 10%;
+   padding-bottom: 5%;
+   margin-left: 10%;
 }
 
 #skills ul {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     list-style-type: square;
-    margin-top: 2%;
+    white-space: wrap;
     flex-wrap: wrap;
+    margin-top: 2%;
+    width: 70%;
+    padding-left: 0;
 }
+
 .res-row {
     width: 100%;
     flex-direction: row;
@@ -78,25 +86,47 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2%;
+    animation: 1s ease-in FadeInUp;  
 }
 
 .resume {
-    width: 50%;
+    width: 40%;
     position: relative;
     right: 1%;
     border-style: solid;
     margin-left: 25%;
-    margin-right: 25%
+    margin-right: 25%;
+   
 }
 
 .plain-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: 1s ease-in FadeInUp;  
+     
 }
 
 .row p {
     width: 70%;
     line-height: 2;
     font-size: 100%;
+    animation: 1s ease-in FadeInUp;  
+}
+
+@media screen and (max-width: 600px) {
+    .resume {
+        width: 80vw
+    }
+
+    #skills li {
+        width: 15vw;
+        margin-left: 1vw;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        padding-left: 3%;
+    }
+
 }
