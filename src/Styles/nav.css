@@ -226,6 +226,9 @@
         display: none;
     }
 
+    .burger-toggle {
+        font-size: 80%;
+    }
     .mobile-menu {
         display: -webkit-flex
     }
