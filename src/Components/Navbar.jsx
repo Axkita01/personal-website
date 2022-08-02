@@ -90,6 +90,26 @@ function Navbar () {
                     <li id = 'b1'><a  className = 'link' href = '/'>Home</a></li>
                     <li id = 'b2'><a  className = 'link' href = '/resume'>Resume</a></li>
                     <li id = 'b3'><a  className = 'link' href = '/projects'>Projects</a></li>
+                    <li 
+                    id = 'b4'>
+                        <a  
+                        className = 'link' 
+                        href = 'https://linkedin.com/in/alexander-f-kita'
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li id = 'b5'>
+                        <a  
+                        className = 'link' 
+                        href = 'https://github.com/Axkita01'
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                    </li>
                 </ul>
             </div>
 
