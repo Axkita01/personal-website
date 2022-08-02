@@ -48,7 +48,7 @@ function Projects() {
                 desc = {speed_project_desc} 
                 title = 'Speed Card Game App' 
                 windowWidth = {window.innerWidth}
-                link = 'Work in progress.'
+                link = 'https://master--sparkling-cranachan-408af8.netlify.app/'
                 git = 'https://github.com/Axkita01/speed-project'/>
 
                 <ProjectCard 
