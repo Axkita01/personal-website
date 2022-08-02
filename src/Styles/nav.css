@@ -198,7 +198,7 @@
 }
 
 #b5 {
-    animation: wait .1.2s ease 0s, slideIn .3s ease .1.2s;
+    animation: wait 1.2s ease 0s, slideIn .3s ease 1.2s;
 }
 
 .drop-links {
@@ -233,10 +233,11 @@
     .navLinks {
         display: none;
     }
-
-    .burger-toggle {
-        font-size: 20px;
+    
+    .burger-toggle b {
+        font-size: 10px;
     }
+
     .mobile-menu {
         display: -webkit-flex
     }
