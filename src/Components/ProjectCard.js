@@ -29,13 +29,13 @@ export default function ProjectCard(props) {
                 <Card.Text style = {{marginLeft: '5%', marginTop: 0}}>
                 <Card.Link 
                 as = {props.link.slice(-1) !== '.' ? 'a': 'text'} 
-                href = {props.link}>
+                href = {props.link} target="_blank">
                     {props.link.slice(-1) !== '.' ? 'Link': props.link}
                 </Card.Link>
                 </Card.Text>
 
                 <Card.Text style = {{marginLeft: '5%', marginTop: 0}}>
-                    <Card.Link href = {props.git}>
+                    <Card.Link href = {props.git} target="_blank">
                         Git Repository
                     </Card.Link>
                 </Card.Text>
