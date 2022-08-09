@@ -16,7 +16,8 @@ export default function ProjectCard(props) {
             <Card.Body>
                 <Card.Title 
                 as = 'h3' 
-                style = {{marginLeft: '5%', marginBottom: 0}}>
+                style = {{marginLeft: '5%', marginBottom: 0}}
+                className = 'card-title'>
                     {props.title}
                 </Card.Title>
 
@@ -27,7 +28,8 @@ export default function ProjectCard(props) {
                 </Card.Text>
 
                 <Card.Text style = {{marginLeft: '5%', marginTop: 0}}>
-                <Card.Link 
+                <Card.Link
+                classname = 'card-link'
                 as = {props.link.slice(-1) !== '.' ? 'a': 'text'} 
                 href = {props.link} target="_blank">
                     {props.link.slice(-1) !== '.' ? 'Link': props.link}
@@ -35,7 +37,7 @@ export default function ProjectCard(props) {
                 </Card.Text>
 
                 <Card.Text style = {{marginLeft: '5%', marginTop: 0}}>
-                    <Card.Link href = {props.git} target="_blank">
+                    <Card.Link href = {props.git} target="_blank" classname = 'card-link'>
                         Git Repository
                     </Card.Link>
                 </Card.Text>

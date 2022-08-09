@@ -12,3 +12,41 @@
         margin-bottom: 1%;
     }
 }
+
+.card {
+    transition: 1s ease 0s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px black;
+    transition: 1s ease 0s;
+}
+
+.card-title {
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+}
+
+.card-desc {
+    font-family: 'Karla';
+    color: black
+
+}
+
+.card-link {
+    text-decoration: none;
+    font-family: 'Karla';
+    color: black;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    color: gray;
+    transition: .3s ease 0s;
+}
+
+.card-link:visited {
+    text-decoration: none;
+    color: 'black';
+    font-weight: bold;
+}

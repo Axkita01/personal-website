@@ -12,10 +12,12 @@
 
 .header {
     margin-bottom: 1%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 #project-second{
     justify-content: center;
+    font-family: 'Karla'
 }
 
 #project-second p {

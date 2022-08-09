@@ -20,6 +20,7 @@
 .header {
     display: flex;
     justify-content: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .block {
@@ -32,32 +33,38 @@
 
 .block h2 {
     margin-bottom: 0px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .block h4 {
     margin-top: 2%;
     margin-bottom: 2%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 .timeframe {
     margin-top: 2%;
     margin-bottom: 2%;
+    font-family: 'Karla';
 }
 
 .description {
     margin-top: 5px;
     margin-bottom: 30px;
+    font-family: 'Karla';
 }
 
 .resdown {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+    font-family: 'Karla';
 }
 
 #volunteering ul{
     margin-top: 2%;
-    padding-left: 5%
+    padding-left: 5%;
+    font-family: 'Karla';
 }
 
 

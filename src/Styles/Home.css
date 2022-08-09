@@ -18,6 +18,7 @@
     justify-content: center;
     background: white;
 }
+
 .page {
     display: flex;
     flex-direction: column;
@@ -32,16 +33,19 @@
 
 .partition h1 {
     margin-bottom: 1%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
 #second-part {
     margin-top: 0;
     background: rgb(199, 198, 198)
 }
+
 .paragraph {
     line-height: 2;
     padding: 0;
     width: 80%;
+    font-family: 'Karla';
 }
  
 .partition {
@@ -90,6 +94,7 @@
     flex-direction: row;
     height: 4em;
     object-position: 0;
+    font-family: 'Karla';
 }
 
 #experience li img {
