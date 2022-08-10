@@ -25,9 +25,8 @@ function Home() {
                 </p>
                     {/*Accounting for Mobile*/}
                     {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 
-                    <div style = {{height: '40vh', width: '40vh'}}>
+                    <div  className = 'gallery'>
                     <Images 
-                    className = 'gallery'
                     img1 = {pic1}
                     img2 = {pic2}
                     img3 = {pic3}
@@ -35,9 +34,9 @@ function Home() {
                     </div>: 
                     <div 
                     style = {{
-                        width: '40vh', 
+                        width: '80%', 
                         borderStyle: 'solid', 
-                        height: '40vh',
+                        height: '80%',
                         }}>
                         <img src = {pic4} style = {{height: '100%', width: 'auto'}} alt = 'home picture'/>
                     </div>}

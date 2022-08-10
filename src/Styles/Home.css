@@ -46,6 +46,9 @@
     padding: 0;
     width: 80%;
     font-family: 'Karla';
+    margin-top: 0;
+    border-style: solid;
+    border-radius: .5vw
 }
  
 .partition {
@@ -101,16 +104,22 @@
     height: 80%;
 }
 
+.gallery {
+    height: 40%;
+    width: 40%
+}
+
 @media screen and (max-width: 600px) {
     /*fix image fitting*/
     .gallery {
-        width: 50vw;
+        width: 75%;
         height: auto;
     }
     
     .paragraph {
         font-size: 1.5vh;
-        width: 90%
+        width: 100%;
+        border-radius: 1vw;
     }
 
     .partition h1 {
@@ -120,6 +129,7 @@
     .partition {
         font-size: 1.5vh
     }
+
 
     #experience li {
         font-size: 2vh
