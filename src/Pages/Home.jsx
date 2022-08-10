@@ -1,11 +1,14 @@
 import Images from '../Components/Carosel.js'
 import '../Styles/Home.css'
+import {useEffect} from 'react'
+import pic1 from '../assets/pic1.jpg'
 import pic2 from '../assets/pic2.jpg'
 import pic3 from '../assets/pic3.jpg'
 import pic4 from '../assets/pic4.jpg'
 import BottomSquares from '../Components/BottomDesign';
 
 function Home() {
+    /*useEffect(() => {setInterval(autoScroll(), 3000)}, [])*/
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
             <div className = 'home-container'>
@@ -25,18 +28,18 @@ function Home() {
                     <div style = {{height: '40vh', width: '40vh'}}>
                     <Images 
                     className = 'gallery'
-                    img1 = {pic4}
+                    img1 = {pic1}
                     img2 = {pic2}
                     img3 = {pic3}
                     />
                     </div>: 
                     <div 
                     style = {{
-                        width: '80%', 
+                        width: '40vh', 
                         borderStyle: 'solid', 
-                        height: '80%',
+                        height: '40vh',
                         }}>
-                        <img src = {pic4} style = {{height: '40vh', width: '40vh'}} alt = 'home picture'/>
+                        <img src = {pic4} style = {{height: '100%', width: 'auto'}} alt = 'home picture'/>
                     </div>}
                 
             </div>
