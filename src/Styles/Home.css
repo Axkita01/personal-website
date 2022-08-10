@@ -104,21 +104,17 @@
     height: 80%;
 }
 
-.gallery {
-    height: 40%;
-    width: 40%
-}
 
 @media screen and (max-width: 600px) {
     /*fix image fitting*/
     .gallery {
-        width: 75%;
+        width: 50vw;
         height: auto;
     }
     
     .paragraph {
         font-size: 1.5vh;
-        width: 100%;
+        width: 90%;
         border-radius: 1vw;
     }
 
