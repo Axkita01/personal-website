@@ -16,7 +16,7 @@ function Projects() {
                 <h1 style = {{marginBottom: '1%'}}>Projects Overview</h1>
             </Row>
             <Row id = 'project-second'>
-                <p>
+                <p className = 'paragraph project-paragraph'>
                     The below projects are current and past projects I have participated
                     in. Throughout these projects, I have had the opportunity to improve
                     and gain new skills. I hope to continue doing projects and build my

@@ -9,7 +9,6 @@
     background: white;
 }
 
-
 .header {
     margin-bottom: 1%;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -43,6 +42,10 @@
 
     .second-header h1 {
         font-size: 6vw;
+    }
+
+    .project-paragraph {
+        font-size: 1vh;
     }
 }
 
