@@ -35,9 +35,9 @@ function Home() {
                     </div>: 
                     <div 
                     style = {{
-                        width: '40vh', 
+                        width: '30vh', 
                         borderStyle: 'solid', 
-                        height: '40vh',
+                        height: '30vh',
                         }}>
                         <img src = {pic4} style = {{height: '100%', width: 'auto'}} alt = 'home picture'/>
                     </div>}
