@@ -25,15 +25,15 @@ function Home() {
                 </p>
                     {/*Accounting for Mobile*/}
                     {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 
-                    <div style = {{height: 'auto', width: '40%'}}>
+                    <div className = 'gallery' >
                     <Images 
-                    className = 'gallery'
                     img1 = {pic1}
                     img2 = {pic2}
                     img3 = {pic3}
                     />
                     </div>: 
                     <div 
+                    className = 'mobile-image'
                     style = {{
                         width: '30vh', 
                         borderStyle: 'solid', 

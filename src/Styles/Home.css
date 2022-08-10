@@ -41,10 +41,11 @@
 }
 
 .paragraph {
-    line-height: 3;
-    padding: 0;
+    line-height: 2.5;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 0;
-    width: 80%;
+    width: 70%;
     font-family: 'Karla';
     border-style: solid;
     border-width: 1%;
@@ -104,10 +105,18 @@
     height: 80%;
 }
 
-@media screen and (max-width: 600px) {
+.mobile-image {
+    width: 90%;
+    height: auto
+}
+
+.gallery {
+    width: 50%
+}
+@media screen and (max-width: 650px) {
     /*fix image fitting*/
     .gallery {
-        width: 50vw;
+        width: 60vw;
         height: auto;
     }
     
