@@ -25,7 +25,7 @@ function Home() {
                 </p>
                     {/*Accounting for Mobile*/}
                     {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 
-                    <div style = {{height: '40vh', width: '40vh'}}>
+                    <div style = {{height: 'auto', width: '40%'}}>
                     <Images 
                     className = 'gallery'
                     img1 = {pic1}
