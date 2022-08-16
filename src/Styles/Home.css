@@ -125,6 +125,7 @@
         border-radius: .8vw;
         padding-right: 5%;
         padding-left: 5%;
+        border-width: '.3vw'
     }
 
     .partition h1 {
