@@ -18,6 +18,7 @@
 }
 
 .header {
+    margin-bottom: 0 !important;
     display: flex;
     justify-content: center;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -95,13 +96,26 @@
 }
 
 .resume {
-    width: 40%;
-    position: relative;
-    right: 1%;
+    display: flex;
+    width: 60%;
     border-style: solid;
-    margin-left: 25%;
-    margin-right: 25%;
-   
+}
+
+.resume-page {
+    object-position: 0 !important; 
+}
+
+/*add in later*/
+.react-pdf__Page__textContent {
+    display: none !important;
+    width: 97% !important;
+    height: 90% !important;
+}
+
+.react-pdf__Page__canvas {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100% !important
 }
 
 .plain-text {
@@ -109,7 +123,6 @@
     flex-direction: column;
     align-items: center;
     animation: 1s ease-in FadeInUp;  
-     
 }
 
 .row p {
@@ -121,7 +134,8 @@
 
 @media screen and (max-width: 600px) {
     .resume {
-        width: 80vw
+        width: 80vw !important;
+        border-width: .1vw;
     }
 
     #skills li {

@@ -1,5 +1,6 @@
 import '../Styles/resume.css';
-import PDF from '../ResumeFall2022.pdf';
+import PDF from '../assets/Alexander.Kita.ECE.Resume.Fall2022.pdf';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5'
 import BottomSquares from '../Components/BottomDesign';
 
 function Resume() {
@@ -14,11 +15,12 @@ function Resume() {
             </div>
             
             <div className = 'res-row'>
-                <img src = {require('../assets/ECEResume_00_00.jpg')} className= 'resume'alt = 'resume'></img>
-                
+                <Document file = {PDF} className = 'resume'>
+                    <Page pageIndex={0} className = 'resume-page'/>
+                </Document>
             </div>
             <div className='res-row' style = {{marginBottom: 0}}>
-                <a href = {PDF} className = 'resdown' download = '../ResumeFall2022.pdf'>
+                <a href = {PDF} className = 'resdown' download = {PDF}>
                     Resume Download
                 </a>
             </div>
