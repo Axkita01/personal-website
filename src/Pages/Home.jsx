@@ -1,6 +1,7 @@
 import React from 'react'
 import BottomSquares from '../Components/BottomDesign';
 import Carosel from '../Components/Carosel'
+import '../Styles/Home.css'
 
 function Home() {
     return (
