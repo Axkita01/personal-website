@@ -1,4 +1,5 @@
 
+import React from 'react'
 import '../Styles/projects.css'
 import {Row, Container} from 'react-bootstrap'
 import BottomSquares from '../Components/BottomDesign.js';
