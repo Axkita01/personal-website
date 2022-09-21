@@ -1,5 +1,5 @@
 
-
+import React from 'react';
 import { useEffect, useReducer } from 'react';
 import '../Styles/Carosel.css'
 

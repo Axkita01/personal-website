@@ -1,4 +1,5 @@
 import '../Styles/BottomDesign.css'
+import React from 'react';
 function BottomSquares () {
     return (
         <div className = 'design'>

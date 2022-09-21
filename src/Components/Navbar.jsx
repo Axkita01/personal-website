@@ -3,6 +3,7 @@ import '../Styles/nav.css';
 import pic from '../assets/header.jpg';
 import linked from '../assets/linkedin.png';
 import git from '../assets/git.png';
+import React from 'react';
 import {useState, useEffect} from 'react';
 
 
