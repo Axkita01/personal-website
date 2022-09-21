@@ -6,9 +6,9 @@ import pic2 from '../assets/pic2.jpg'
 import pic3 from '../assets/pic3.jpg'
 import pic4 from '../assets/pic4.jpg'
 import BottomSquares from '../Components/BottomDesign';
+import Carosel from '../Components/Carosel'
 
 function Home() {
-    /*useEffect(() => {setInterval(autoScroll(), 3000)}, [])*/
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
             <div className = 'home-container'>
@@ -23,26 +23,11 @@ function Home() {
                     and gain experience essential to my future career. I have knowledge of Python, Javascript, 
                     React.js, html, and CSS from coursework and personal projects.
                 </p>
-                    {/*Accounting for Mobile*/}
-                    {!(/Mobile|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) ? 
-                    <div className = 'gallery' >
-                    <Images 
-                    img1 = {pic1}
-                    img2 = {pic2}
-                    img3 = {pic3}
-                    />
-                    </div>: 
-                    <div 
-                    className = 'mobile-image'
-                    style = {{
-                        width: '30vh', 
-                        borderStyle: 'solid', 
-                        height: '30vh',
-                        }}>
-                        <img src = {pic4} style = {{height: '100%', width: 'auto'}} alt = 'home picture'/>
-                    </div>}
-                
+                <div className = 'gallery'>
+                    <Carosel/>
+                </div>
             </div>
+
             </div>
             <BottomSquares/>
             <div className = 'partition' id = 'second-part'>

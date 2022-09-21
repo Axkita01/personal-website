@@ -104,32 +104,25 @@
     height: 80%;
 }
 
-.mobile-image {
-    width: 90%;
-    height: auto
+.gallery {
+    width: 70% !important
 }
 
-.gallery {
-    width: 50%
-}
-@media screen and (max-width: 650px) {
-    /*fix image fitting*/
+@media screen and (max-width: 500px) {
     .gallery {
-        width: 60vw;
-        height: auto;
+        width: 90%
     }
-    
     .paragraph {
-        font-size: 1.5vh;
-        width: 90%;
-        border-radius: .8vw;
-        padding-right: 5%;
-        padding-left: 5%;
+        font-size: 3vw;
+        width: 55%;
+        border-radius: 1.5vw;
+        margin-right: 5%;
+        margin-left: 5%;
         border-width: '.3vw'
     }
 
     .partition h1 {
-        font-size: 4vh;
+        font-size: 5vw;
     }
 
     .partition {

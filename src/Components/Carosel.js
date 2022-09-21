@@ -1,22 +1,42 @@
-import { Carousel } from '@mantine/carousel';
-import pic1 from '../assets/pic1.jpg'
-import pic2 from '../assets/pic2.jpg'
-import pic3 from '../assets/pic3.jpg'
 
-export default function Images () {
+
+import { useEffect, useReducer } from 'react';
+import '../Styles/Carosel.css'
+
+
+const pictures = [
+  require('../assets/pic1.jpg'),
+  require('../assets/pic2.jpg'),
+  require('../assets/pic3.jpg')
+]
+
+function reducer(state, action) {
+    let copy = state.slice()
+    let n = copy.pop()
+    copy.unshift(n)
+    return copy
+}
+export default function Carosel () {
+  const [picState, dispatch] = useReducer(reducer, pictures)
+
+  console.log(picState)
+  useEffect(() => {
+    let s = setInterval(() => {dispatch({type: 'shift'})}, 7000)
+    return () => {clearInterval(s)}
+  }, [])
+
+  var items = picState.map((element, index) => { 
+    return (
+    <li key = {index.toString()} className = { (index !== 1) ? 'image-container': 'middle-pic'}
+    id = {'o' + index.toString()}>
+      <img src = {element}/>
+    </li>
+  )})
+
   return (
-    <Carousel 
-    sx={{width: '100%'}} 
-    mx="auto" 
-    withIndicators 
-    slideSize="100%"
-    loop
-    align="center"
-    >
-      <Carousel.Slide><img style = {{width: '100%'}} src = {pic1}/></Carousel.Slide>
-      <Carousel.Slide><img style = {{width: '100%'}} src = {pic2}/></Carousel.Slide>
-      <Carousel.Slide><img style = {{width: '100%'}} src = {pic3}/></Carousel.Slide>
-      {/* ...other slides */}
-    </Carousel>
+      <ul className = 'pic-items'>
+        {items}
+      </ul>
+    
   );
 }
