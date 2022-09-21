@@ -139,7 +139,9 @@
         border-radius: 1.5vw;
         margin-right: 5%;
         margin-left: 5%;
-        border-width: .3vw
+        padding-left: 1%;
+        padding-right: 1%;
+        border-width: .3vw;
     }
 
     .partition h1 {
