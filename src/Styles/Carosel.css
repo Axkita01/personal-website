@@ -72,7 +72,7 @@
     margin-right: 3vw;
     border-radius: 1vw;
     scale: .5;
-    animation: fadeout 4.05s ease 3s, fadeinout 7s ease 7.01s infinite;
+    animation: fadeout 4.05s ease 3s, fadeinout 7s ease 7.04s infinite;
 }
 
 
@@ -86,16 +86,16 @@
     width: 35vw;
     margin-right: 3vw;
     border-radius: 1vw;
-    animation: fadeout 4.05s ease 3s, expandashrink 7s ease 7.01s infinite;
+    animation: fadeout 4.05s ease 3s, expandashrink 7s ease 7.04s infinite;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 700px) {
     .image-container {
-        width: 30vh;
+        width: 70vw;
         height: auto;
     }
 
     .middle-pic {
-        width: 30vh;
+        width: 70vw;
     }
 }

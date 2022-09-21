@@ -30,7 +30,7 @@ function Home() {
                     Languages/Frameworks
                 </h1>
                     <ul id = 'experience'>
-                        <li style = {{marginTop: "10%"}}>
+                        <li>
                             <img  
                             alt = 'python logo'
                             src = {require('../assets/python-logo.png')}
@@ -53,9 +53,10 @@ function Home() {
                             />
                             <h2>HTML/CSS</h2>
                         </li>
-
-                        <li>
-                            <img 
+                    </ul>
+                    <ul id = 'experience' className = 'secondExp'>
+                    <li>
+                        <img 
                             src = {require('../assets/flask-logo.png')}
                             alt = 'flask logo'
                             />

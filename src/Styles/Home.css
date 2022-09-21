@@ -37,6 +37,15 @@
 
 #second-part {
     margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#second-part h1{
+    margin-right: 5%;
+    font-size: 2em;
+    
 }
 
 .paragraph {
@@ -77,17 +86,23 @@
     display: flex;
 }
 
+
+.secondExp {
+    margin-right: 0% !important
+}
+
 #experience {
     display: grid;
+    width: 20%;
     padding: 0;
     list-style: none;
     margin: 0;
-    flex-direction: column;
+    margin-right: 2%;
 }
 
 #experience h2 {
     margin: 0;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 
 #experience li {
@@ -95,25 +110,31 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: 4em;
+    justify-content: center;
+    height: 6em;
+    width: 100%;
     object-position: 0;
     font-family: 'Karla';
+    font-size: 1.2em;
+    background: rgb(86, 199, 255);
+    border-radius: .5em
 }
 
 #experience li img {
-    height: 80%;
+    height: 70%;
 }
 
 .gallery {
     width: 70% !important
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1400px) {
     .gallery {
         width: 90%
     }
+
     .paragraph {
-        font-size: 3vw;
+        font-size: 1vh;
         width: 55%;
         border-radius: 1.5vw;
         margin-right: 5%;
@@ -122,14 +143,41 @@
     }
 
     .partition h1 {
-        font-size: 5vw;
+        font-size: 2vw;
     }
 
     .partition {
-        font-size: 1.5vh
+        font-size: 1.5vh;
+        align-items: center;
     }
 
     #experience li {
-        font-size: 2vh
+        width: 100%;
+    }
+
+    #experience h2 {
+        font-size: 4vw !important;
+    }
+
+    #second-part {
+        flex-direction: column;
+    }
+
+    #experience {
+        margin-right: 0;
+        display: flex;
+        width: 50vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #experience li img {
+        height: 8vw;
+    }
+
+    #second-part h1 {
+        flex-direction: column;
+        font-size: 2em;
+        margin-right: 0
     }
 }
