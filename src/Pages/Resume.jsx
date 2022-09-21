@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Styles/resume.css';
-import PDF from '../assets/Alexander.Kita.ECE.Resume.Fall2022.pdf';
+import PDF from '../assets/Fall 2022 Resume Alex Kita';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5'
 import BottomSquares from '../Components/BottomDesign';
 
