@@ -17,7 +17,7 @@ function Home() {
                     Objective and Information
                 </h1>
                 <p className = 'paragraph'>
-                    My name is Alexander Kita. I am a second year Computer Engineering
+                    My name is Alexander Kita. I am a third year Computer Engineering
                     major at The University of Texas at Austin. I am currently seeking
                     software engineering internship opportunities in order to sharpen my current skills
                     and gain experience essential to my future career. I have knowledge of Python, Javascript, 
