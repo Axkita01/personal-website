@@ -1,5 +1,6 @@
 import {Card} from 'react-bootstrap';
 import '../Styles/Card.css'
+import React from 'react';
 
 export default function ProjectCard(props) {
     const radius = props.windowWidth > 600 ? '10px': '5px'
