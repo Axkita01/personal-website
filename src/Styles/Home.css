@@ -154,7 +154,6 @@
 
     #experience li {
         width: 100%;
-        justify-content: left;
     }
 
     #experience h2 {
@@ -175,7 +174,6 @@
 
     #experience li img {
         height: 80%;
-        padding-left: 19%;
     }
 
     #second-part h1 {
