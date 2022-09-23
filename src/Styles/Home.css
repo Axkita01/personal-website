@@ -54,10 +54,11 @@
     padding-right: 5%;
     margin-top: 0;
     width: 70%;
+    font-size: 1em;
     font-family: 'Karla';
-    border-style: solid;
-    border-width: 1%;
-    border-radius: 1em
+    border-bottom: solid;
+    border-width: .2em;
+    border-color: rgb(86, 199, 255);;
 }
  
 .partition {
@@ -134,14 +135,12 @@
     }
 
     .paragraph {
-        font-size: 1vh;
-        width: 55%;
-        border-radius: 1.5vw;
+        font-size: 1.5vh;
+        width: 75vw;
         margin-right: 5%;
         margin-left: 5%;
         padding-left: 1%;
         padding-right: 1%;
-        border-width: .3vw;
     }
 
     .partition h1 {
@@ -155,6 +154,7 @@
 
     #experience li {
         width: 100%;
+        justify-content: left;
     }
 
     #experience h2 {
@@ -174,7 +174,8 @@
     }
 
     #experience li img {
-        height: 8vw;
+        height: 80%;
+        padding-left: 19%;
     }
 
     #second-part h1 {
