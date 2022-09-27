@@ -110,7 +110,7 @@ function Resume() {
                             Co-op Engineer | Ineos
                         </h4>
                         <p className = 'timeframe'>
-                            Summer 2021
+                            Summer 2022
                         </p>
                         <p className = 'description'>
                         Did projects involving changes on-site and 
