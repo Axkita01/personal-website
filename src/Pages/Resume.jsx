@@ -93,16 +93,15 @@ function Resume() {
 
                     <div className = 'item'>
                         <h4>
-                            Independent Study Mentorship (ISM)
+                        Engineering Student Services Tutor 
                         </h4>
                         <p className = 'timeframe'>
-                            Fall 2019 - Spring 2020
+                            Fall 2022 - Present
                         </p>
                         <p className = 'description'>
-                        Independent Study Mentorship (ISM) is a high school 
-                        program that provides students with an opportunity to<br/> 
-                        do a semester-long research project while collaborating with a mentor. 
-                        The project is presented in front of an audience.
+                        Tutoring various subjects including calculus 1, 
+                        calculus 2, vector calculus, physics, and chemistry. 
+
                         </p>
                     </div>
 
