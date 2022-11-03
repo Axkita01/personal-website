@@ -19,9 +19,8 @@ function reducer(state, action) {
 export default function Carosel () {
   const [picState, dispatch] = useReducer(reducer, pictures)
 
-  console.log(picState)
   useEffect(() => {
-    let s = setInterval(() => {dispatch({type: 'shift'})}, 7000)
+    let s = setInterval(() => {s = dispatch({type: 'shift'})}, 7000)
     return () => {clearInterval(s)}
   }, [])
 
