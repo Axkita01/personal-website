@@ -10,6 +10,7 @@ function Projects() {
     let lswebsite_desc = "Reworked and added features to the official website of the super smash brothers organization's website at UT Austin."
     let speed_project_desc = "Created an app to play the card game called speed using React Native. Currently a work in progress and will continue to be improved."
     let personal_website_desc = "The current website being viewed. Portfolio Website for resume and projects."
+    let sweetTooth_desc = "Created iOS app utilizing google maps API to help users find dessert places in their area. Used React Native. Will eventually be deployed and web version is planned to be made."
     return (
         <div className = 'page' style = {{paddingTop: 60}}>
             <Container className='first-half'>
@@ -58,7 +59,15 @@ function Projects() {
                 windowWidth = {window.innerWidth}
                 link = 'Currently Viewing.'
                 git = 'https://github.com/Axkita01/personal-website'/>
+
+                <ProjectCard 
+                desc = {sweetTooth_desc} 
+                title = 'Sweet Tooth'
+                windowWidth = {window.innerWidth}
+                link = 'Not Deployed Yet.'
+                git = 'https://github.com/Axkita01/SweetTooth'/>
             </Row>
+
         </div>
     );
 }
