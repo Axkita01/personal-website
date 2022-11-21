@@ -39,6 +39,13 @@ function Projects() {
                 alignItems: 'center', 
                 flexDirection: 'column'
                 }}>
+
+                <ProjectCard 
+                desc = {sweetTooth_desc} 
+                title = 'Sweet Tooth'
+                windowWidth = {window.innerWidth}
+                link = 'Not Deployed Yet.'
+                git = 'https://github.com/Axkita01/SweetTooth-Web'/>
                 <ProjectCard 
                 desc = {lswebsite_desc} 
                 title = 'Longhorn Smash Website' 
@@ -60,12 +67,6 @@ function Projects() {
                 link = 'Currently Viewing.'
                 git = 'https://github.com/Axkita01/personal-website'/>
 
-                <ProjectCard 
-                desc = {sweetTooth_desc} 
-                title = 'Sweet Tooth'
-                windowWidth = {window.innerWidth}
-                link = 'Not Deployed Yet.'
-                git = 'https://github.com/Axkita01/SweetTooth-Web'/>
             </Row>
 
         </div>
