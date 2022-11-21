@@ -77,18 +77,6 @@ function Resume() {
                         </p>
                     </div>
 
-                    <div className = 'item'>
-                        <h4>
-                            IEEE CS
-                        </h4>
-                        <p className = 'timeframe'>
-                            Fall 2022 - Present
-                        </p>
-                        <p className = 'description'>
-                        IEEE CS is a IEE organization that creates a 
-                        variety of coding projects.
-                        </p>
-                    </div>
 
 
                     <div className = 'item'>
