@@ -6,11 +6,13 @@ import Home from './Pages/Home';
 import Resume from './Pages/Resume';
 import Projects from './Pages/Projects';
 import Navbar from './Components/Navbar';
-
+import { Footer } from './Components/Footer';
+import { useLocation } from 'react-router-dom';
 
 
 
 function App() {
+
   return (
     <div>
       <Navbar></Navbar>
@@ -22,6 +24,7 @@ function App() {
           <Route exact path = 'projects' element = {<Projects/>}></Route>
         </Routes>
       </Router>
+      <Footer/>
     </div>
 
   );
