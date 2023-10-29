@@ -99,9 +99,11 @@
     display: flex;
     width: 60%;
     border-style: solid;
+    max-width: 600px;
 }
 
 .resume-page {
+    width: 100%;
     object-position: 0 !important; 
 }
 

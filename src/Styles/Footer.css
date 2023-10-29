@@ -1,7 +1,9 @@
 .footer-box {
     background: rgb(86, 199, 255);
-    height: 30px;
+    height: 2rem;
     width: 102%;
     border-top-style: solid;
     margin-top: 25px;
+    position: absolute;
+    bottom: 0;
 }
